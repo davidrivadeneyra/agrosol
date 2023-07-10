@@ -8,7 +8,7 @@ export default function Home() {
 				de 4 años he estado creando productos que conecten con los
 				usuarios y ayuden a las empresas a alcanzar sus objetivos 🚀. Me
 				encanta la colaboración en equipo, las interfaces hermosas 🌈 y
-				las buenas prácticas.{' '}
+				las buenas prácticas.
 			</h1>
 		</div>
 	)
