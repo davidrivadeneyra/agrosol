@@ -64,6 +64,82 @@ module.exports = {
 				900: 'hsl(var(--yellow-900), <alpha-value>)',
 			},
 		},
+		fontSize: {
+			bodyWebRegularBase: [
+				'1rem',
+				{ lineHeight: '27px', fontWeight: '400' },
+			],
+			bodyWebRegularLarge: [
+				'1.313rem',
+				{ lineHeight: '36px', fontWeight: '400' },
+			],
+			bodyWebBoldBase: [
+				'1rem',
+				{ lineHeight: '27px', fontWeight: '800' },
+			],
+			bodyWebBoldLarge: [
+				'1.313rem',
+				{ lineHeight: '36px', fontWeight: '800' },
+			],
+			bodyWebItalicBase: [
+				'1rem',
+				{ lineHeight: '27px', fontSyle: 'italic', fontWeight: '400' },
+			],
+			bodyWebItalicLarge: [
+				'1.313rem',
+				{ lineHeight: '36px', fontSyle: 'italic', fontWeight: '400' },
+			],
+
+			bodyMobileRegularBase: [
+				'0.875rem',
+				{ lineHeight: '24px', fontWeight: '400' },
+			],
+			bodyMobileRegularLarge: [
+				'1.125rem',
+				{ lineHeight: '31px', fontWeight: '400' },
+			],
+			bodyMobileBoldBase: [
+				'0.875rem',
+				{ lineHeight: '24px', fontWeight: '800' },
+			],
+			bodyMobileBoldLarge: [
+				'1.125rem',
+				{ lineHeight: '31px', fontWeight: '800' },
+			],
+			bodyMobileItalicBase: [
+				'0.875rem',
+				{ lineHeight: '24px', fontSyle: 'italic', fontWeight: '400' },
+			],
+			bodyWebItalicLarge: [
+				'1.125rem',
+				{ lineHeight: '31px', fontSyle: 'italic', fontWeight: '400' },
+			],
+			headingWebBigger: [
+				'3rem',
+				{ lineHeight: '53px', fontWeight: '500' },
+			],
+			headingWebBig: [
+				'1.75rem',
+				{ lineHeight: '31px', fontWeight: '500' },
+			],
+			headingWebBase: ['1rem', { lineHeight: '19px', fontWeight: '500' }],
+			headingMobileBigger: [
+				'2rem',
+				{ lineHeight: '35px', fontWeight: '500' },
+			],
+			headingMobileBig: [
+				'1.188rem',
+				{ lineHeight: '21px', fontWeight: '500' },
+			],
+			headingMobileBase: [
+				'.875rem',
+				{ lineHeight: '15px', fontWeight: '500' },
+			],
+		},
+		fontFamily: {
+			ui: 'ui, sans-serif',
+			heading: 'heading, sans-serif',
+		},
 		extend: {},
 	},
 	plugins: [],

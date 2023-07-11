@@ -422,7 +422,60 @@ video {
   display: none;
 }
 
-:root {
+@font-face {
+  font-family: 'ui';
+
+  src: url('../public/fonts/Nunito-ExtraBold.woff2') format('woff2'),
+			url('../public/fonts/Nunito-ExtraBold.woff') format('woff');
+
+  font-weight: 800;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ui';
+
+  src: url('../public/fonts/Nunito-Italic.woff2') format('woff2'),
+			url('../public/fonts/Nunito-Italic.woff') format('woff');
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ui';
+
+  src: url('../public/fonts/Nunito-Regular.woff2') format('woff2'),
+			url('../public/fonts/Nunito-Regular.woff') format('woff');
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heading';
+
+  src: url('../public/fonts/geomanist-medium-webfont.woff2')
+				format('woff2'),
+			url('../public/fonts/geomanist-medium-webfont.woff') format('woff');
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+:root[data-theme='dark'] {
   --gray-100: 220deg, 9%, 13%;
   --gray-200: 224deg, 14%, 15%;
   --gray-600: 222deg, 8%, 54%;
@@ -461,45 +514,121 @@ video {
   --yellow-900: 38deg, 80%, 98%;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --gray-100: 220deg, 60%, 99%;
-    --gray-200: 220deg, 73%, 97%;
-    --gray-600: 221deg, 9%, 59%;
-    --gray-700: 223deg, 15% 46%;
-    --gray-800: 222deg, 19%, 31%;
-    --gray-900: 221deg, 24%, 24%;
-    --blue-200: 212deg, 90%, 96%;
-    --blue-300: 213deg, 100%, 93%;
-    --blue-500: 215deg, 94%, 50%;
-    --orange-200: 25deg, 90%, 96%;
-    --orange-300: 25deg, 95%, 92%;
-    --orange-500: 25deg, 79%, 43%;
-    --green-200: 38deg, 62%, 96%;
-    --green-300: 147deg, 69%, 90%;
-    --green-500: 148deg, 38%, 37%;
-    --green-700: 148deg, 19%, 44%;
-    --green-800: 148deg, 15%, 31%;
-    --green-900: 149deg, 24%, 24%;
-    --purple-200: 250deg, 67%, 96%;
-    --purple-300: 250deg, 94%, 94%;
-    --purple-500: 250deg, 75%, 64%;
-    --purple-700: 250deg, 18%, 55%;
-    --purple-800: 251deg, 20%, 40%;
-    --purple-900: 251deg, 24%, 33%;
-    --red-200: 348deg, 56%, 96%;
-    --red-300: 346deg, 94%, 94%;
-    --red-500: 345deg, 60%, 53%;
-    --red-700: 345deg, 16%, 52%;
-    --red-800: 344deg, 20%, 37%;
-    --red-900: 345deg, 24%, 30%;
-    --ywllow-200: 24deg, 71%, 96%;
-    --ywllow-300: 41deg, 94%, 93%;
-    --ywllow-500: 41deg, 90%, 32%;
-    --ywllow-700: 41deg, 16%, 46%;
-    --ywllow-800: 40deg, 15%, 31%;
-    --ywllow-900: 41deg, 24%, 24%;
+:root[data-theme='light'] {
+  --gray-100: 220deg, 60%, 99%;
+  --gray-200: 220deg, 73%, 97%;
+  --gray-600: 221deg, 9%, 59%;
+  --gray-700: 223deg, 15%, 46%;
+  --gray-800: 222deg, 19%, 31%;
+  --gray-900: 221deg, 24%, 24%;
+  --blue-200: 212deg, 90%, 96%;
+  --blue-300: 213deg, 100%, 93%;
+  --blue-500: 215deg, 94%, 50%;
+  --orange-200: 25deg, 90%, 96%;
+  --orange-300: 25deg, 95%, 92%;
+  --orange-500: 25deg, 79%, 43%;
+  --green-200: 138deg, 62%, 96%;
+  --green-300: 147deg, 69%, 90%;
+  --green-500: 148deg, 38%, 37%;
+  --green-700: 148deg, 19%, 44%;
+  --green-800: 148deg, 15%, 31%;
+  --green-900: 149deg, 24%, 24%;
+  --purple-200: 250deg, 67%, 96%;
+  --purple-300: 250deg, 94%, 94%;
+  --purple-500: 250deg, 75%, 64%;
+  --purple-700: 250deg, 18%, 55%;
+  --purple-800: 251deg, 20%, 40%;
+  --purple-900: 251deg, 24%, 33%;
+  --red-200: 348deg, 56%, 96%;
+  --red-300: 346deg, 94%, 94%;
+  --red-500: 345deg, 60%, 53%;
+  --red-700: 345deg, 16%, 52%;
+  --red-800: 344deg, 20%, 37%;
+  --red-900: 345deg, 24%, 30%;
+  --ywllow-200: 24deg, 71%, 96%;
+  --ywllow-300: 41deg, 94%, 93%;
+  --ywllow-500: 41deg, 90%, 32%;
+  --ywllow-700: 41deg, 16%, 46%;
+  --ywllow-800: 40deg, 15%, 31%;
+  --ywllow-900: 41deg, 24%, 24%;
+}
+
+p,
+	b,
+	i {
+  font-family: ui, sans-serif;
+}
+
+.p-base {
+  font-size: 0.875rem;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@media (min-width: 960px) {
+  .p-base {
+    font-size: 1rem;
+    line-height: 27px;
+    font-weight: 400;
   }
+}
+
+.b-base {
+  font-size: 0.875rem;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+@media (min-width: 960px) {
+  .b-base {
+    font-size: 1rem;
+    line-height: 27px;
+    font-weight: 800;
+  }
+}
+
+.heading-link {
+  font-family: heading, sans-serif;
+  font-size: 1.188rem;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+@media (min-width: 960px) {
+  .heading-link {
+    font-size: 1.75rem;
+    line-height: 31px;
+    font-weight: 500;
+  }
+}
+
+.heading-link {
+  cursor: pointer;
+}
+
+.heading-link:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
+.p-link {
+  font-size: 0.875rem;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@media (min-width: 960px) {
+  .p-link {
+    font-size: 1rem;
+    line-height: 27px;
+    font-weight: 400;
+  }
+}
+
+.p-link {
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
 }
 
 *, ::before, ::after {
@@ -602,29 +731,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-16 {
-  margin: 4rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .border-2 {
   border-width: 2px;
-}
-
-.border-green-900 {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--green-900), var(--tw-border-opacity));
-}
-
-.border-green-900\/\[\.50\] {
-  border-color: hsl(var(--green-900), .50);
-}
-
-.border-green-900\/\[\.08\] {
-  border-color: hsl(var(--green-900), .08);
 }
 
 .bg-gray-100 {
@@ -632,98 +740,36 @@ video {
   background-color: hsl(var(--gray-100), var(--tw-bg-opacity));
 }
 
-.bg-green-200 {
+.bg-gray-200 {
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--green-200), var(--tw-bg-opacity));
+  background-color: hsl(var(--gray-200), var(--tw-bg-opacity));
 }
 
-.bg-green-900 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--green-900), var(--tw-bg-opacity));
+.p-10 {
+  padding: 2.5rem;
 }
 
-.p-16 {
-  padding: 4rem;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.text-green-700 {
+.text-gray-700 {
   --tw-text-opacity: 1;
-  color: hsl(var(--green-700), var(--tw-text-opacity));
+  color: hsl(var(--gray-700), var(--tw-text-opacity));
 }
 
-.text-green-900 {
+.text-gray-800 {
   --tw-text-opacity: 1;
-  color: hsl(var(--green-900), var(--tw-text-opacity));
+  color: hsl(var(--gray-800), var(--tw-text-opacity));
 }
 
-.outline-4 {
-  outline-width: 4px;
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: hsl(var(--orange-500), var(--tw-text-opacity));
 }
 
-.outline-2 {
-  outline-width: 2px;
-}
-
-.outline-offset-2 {
-  outline-offset: 2px;
-}
-
-.outline-offset-0 {
-  outline-offset: 0px;
-}
-
-.outline-gray-200\/\[\.8\] {
-  outline-color: hsl(var(--gray-200), .8);
-}
-
-.outline-blue-200\/\[\.8\] {
-  outline-color: hsl(var(--blue-200), .8);
-}
-
-.outline-red-200\/\[\.8\] {
-  outline-color: hsl(var(--red-200), .8);
-}
-
-.outline-red-900\/\[\.8\] {
-  outline-color: hsl(var(--red-900), .8);
-}
-
-.outline-green-900\/\[\.8\] {
-  outline-color: hsl(var(--green-900), .8);
-}
-
-.outline-gray-900\/\[\.8\] {
-  outline-color: hsl(var(--gray-900), .8);
-}
-
-.outline-gray-900 {
-  outline-color: hsl(var(--gray-900), 1);
-}
-
-.outline-green-900 {
-  outline-color: hsl(var(--green-900), 1);
-}
-
-.outline-green-200 {
-  outline-color: hsl(var(--green-200), 1);
-}
-
-.ring-2 {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.ring-green-900 {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: hsl(var(--green-900), var(--tw-ring-opacity));
-}
-
-.ring-red-900 {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: hsl(var(--red-900), var(--tw-ring-opacity));
+@media (min-width: 960px) {
+  .tablet\:border-gray-900\/\[\.08\] {
+    border-color: hsl(var(--gray-900), .08);
+  }
 }
