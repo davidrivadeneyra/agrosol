@@ -2,92 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--light-blue-200: #ebf4feff;
-	--light-blue-300: #dbebffff;
-	--light-blue-500: #086df7ff;
-	--light-gray-100: #fbfcfeff;
-	--light-gray-200: #f2f5fdff;
-	--light-gray-600: #8d93a0ff;
-	--light-gray-700: #646e87ff;
-	--light-gray-800: #40495eff;
-	--light-gray-900: #2e374bff;
-	--light-green-100: #eefbf2ff;
-	--light-green-300: #d4f7e4ff;
-	--light-green-500: #3a825cff;
-	--light-green-700: #5b866fff;
-	--light-green-800: #435b4eff;
-	--light-green-900: #2e4b3cff;
-	--light-orange-200: #fef3ebff;
-	--light-orange-300: #fee7d7ff;
-	--light-orange-500: #c45f17ff;
-	--light-purple-200: #f2f0fcff;
-	--light-purple-300: #e6e1feff;
-	--light-purple-500: #765ee8ff;
-	--light-purple-700: #7f78a1ff;
-	--light-purple-800: #59527aff;
-	--light-purple-900: #474068ff;
-	--light-red-200: #fbf1f3ff;
-	--light-red-300: #fee1e8ff;
-	--light-red-500: #cf3f62ff;
-	--light-red-700: #98717bff;
-	--light-red-800: #714b55ff;
-	--light-red-900: #5f3a43ff;
-	--light-yelllow-200: #fcf3edff;
-	--light-yelllow-300: #fef3dcff;
-	--light-yelllow-500: #9b6c08ff;
-	--light-yelllow-700: #887c63ff;
-	--light-yelllow-800: #5b5343ff;
-	--light-yelllow-900: #4b422eff;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
 	:root {
-		--dark-blue-200: #252c3cff;
-		--dark-blue-300: #384c7aff;
-		--dark-blue-500: #388cffff;
-		--dark-gray-100: #1d1f23ff;
-		--dark-gray-200: #21242cff;
-		--dark-gray-600: #666970ff;
-		--dark-gray-700: #81868dff;
-		--dark-gray-800: #c0c1c4ff;
-		--dark-gray-900: #eaeaebff;
-		--dark-green-100: #25322bff;
-		--dark-green-300: #28573eff;
-		--dark-green-500: #18e779ff;
-		--dark-green-700: #819c8eff;
-		--dark-green-800: #bcdccbff;
-		--dark-green-900: #f6fefaff;
-		--dark-orange-200: #322a25ff;
-		--dark-orange-300: #573c28ff;
-		--dark-orange-500: #f99553ff;
-		--dark-purple-200: #2a2734ff;
-		--dark-purple-300: #413777ff;
-		--dark-purple-500: #8e76feff;
-		--dark-purple-700: #928ea4ff;
-		--dark-purple-800: #cecae2ff;
-		--dark-purple-900: #f7f6feff;
-		--dark-red-200: #322528ff;
-		--dark-red-300: #6d3140ff;
-		--dark-red-500: #f35e82ff;
-		--dark-red-700: #9e8a8fff;
-		--dark-red-800: #dcc6ccff;
-		--dark-red-900: #fef1f4ff;
-		--dark-yelllow-200: #322e25ff;
-		--dark-yelllow-300: #574828ff;
-		--dark-yelllow-500: #eec468ff;
-		--dark-yelllow-700: #9e978aff;
-		--dark-yelllow-800: #dbd3c2ff;
-		--dark-yelllow-900: #fefbf6ff;
-	}
-}
+		--gray-100: 220deg, 9%, 13%;
+		--gray-200: 224deg, 14%, 15%;
+		--gray-600: 222deg, 8%, 54%;
+		--gray-700: 215deg, 5%, 63%;
+		--gray-800: 225deg, 3%, 76%;
+		--gray-900: 240deg, 2%, 92%;
 
-body {
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+		--blue-200: 222deg, 24%, 19%;
+		--blue-300: 222deg, 37%, 35%;
+		--blue-500: 215deg, 100%, 61%;
+
+		--orange-200: 23deg, 15%, 17%;
+		--orange-300: 26deg, 37%, 25%;
+		--orange-500: 24deg, 93%, 65%;
+
+		--green-200: 148deg, 15%, 17%;
+		--green-300: 148deg, 37%, 25%;
+		--green-500: 148deg, 81%, 50%;
+		--green-700: 149deg, 12%, 56%;
+		--green-800: 148deg, 31%, 80%;
+		--green-900: 150deg, 80%, 98%;
+
+		--purple-200: 254deg, 14%, 18%;
+		--purple-300: 249deg, 37%, 34%;
+		--purple-500: 251deg, 99%, 73%;
+		--purple-700: 251deg, 11%, 60%;
+		--purple-800: 250deg, 29%, 84%;
+		--purple-900: 248deg, 80%, 98%;
+
+		--red-200: 346deg, 15%, 17%;
+		--red-300: 345deg, 38%, 31%;
+		--red-500: 346deg, 86%, 66%;
+		--red-700: 345deg, 9%, 58%;
+		--red-800: 344deg, 24%, 82%;
+		--red-900: 346deg, 87%, 97%;
+
+		--yellow-200: 42deg, 15%, 17%;
+		--yellow-300: 41deg, 37%, 25%;
+		--yellow-500: 41deg, 80%, 67%;
+		--yellow-700: 39deg, 9%, 58%;
+		--yellow-800: 41deg, 26%, 81%;
+		--yellow-900: 38deg, 80%, 98%;
+	}
+
+	@media (prefers-color-scheme: light) {
+		:root {
+			--gray-100: 220deg, 60%, 99%;
+			--gray-200: 220deg, 73%, 97%;
+			--gray-600: 221deg, 9%, 59%;
+			--gray-700: 223deg, 15% 46%;
+			--gray-800: 222deg, 19%, 31%;
+			--gray-900: 221deg, 24%, 24%;
+
+			--blue-200: 212deg, 90%, 96%;
+			--blue-300: 213deg, 100%, 93%;
+			--blue-500: 215deg, 94%, 50%;
+
+			--orange-200: 25deg, 90%, 96%;
+			--orange-300: 25deg, 95%, 92%;
+			--orange-500: 25deg, 79%, 43%;
+
+			--green-200: 38deg, 62%, 96%;
+			--green-300: 147deg, 69%, 90%;
+			--green-500: 148deg, 38%, 37%;
+			--green-700: 148deg, 19%, 44%;
+			--green-800: 148deg, 15%, 31%;
+			--green-900: 149deg, 24%, 24%;
+
+			--purple-200: 250deg, 67%, 96%;
+			--purple-300: 250deg, 94%, 94%;
+			--purple-500: 250deg, 75%, 64%;
+			--purple-700: 250deg, 18%, 55%;
+			--purple-800: 251deg, 20%, 40%;
+			--purple-900: 251deg, 24%, 33%;
+
+			--red-200: 348deg, 56%, 96%;
+			--red-300: 346deg, 94%, 94%;
+			--red-500: 345deg, 60%, 53%;
+			--red-700: 345deg, 16%, 52%;
+			--red-800: 344deg, 20%, 37%;
+			--red-900: 345deg, 24%, 30%;
+
+			--ywllow-200: 24deg, 71%, 96%;
+			--ywllow-300: 41deg, 94%, 93%;
+			--ywllow-500: 41deg, 90%, 32%;
+			--ywllow-700: 41deg, 16%, 46%;
+			--ywllow-800: 40deg, 15%, 31%;
+			--ywllow-900: 41deg, 24%, 24%;
+		}
+	}
 }
