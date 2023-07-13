@@ -11,7 +11,10 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en' data-theme='light'>
 			{/* <body className={inter.className}>{children}</body> */}
-			<body className='bg-gray-100 w-full'>{children}</body>
+			<body className='bg-gray-100 w-full desktop:max-w-5xl mx-auto'>
+				{children}
+			</body>
 		</html>
 	)
 }
+//

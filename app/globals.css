@@ -131,7 +131,9 @@
 	p,
 	b,
 	i,
-	a {
+	a,
+	ul,
+	li {
 		@apply font-ui text-gray-700;
 	}
 
@@ -167,13 +169,13 @@
 		@apply text-headingMobileBigger tablet:text-headingWebBigger;
 	}
 	.heading-big {
-		@apply text-headingMobileBig tablet:text-headingWebBig;
+		@apply mb-4 text-headingMobileBig tablet:text-headingWebBig;
 	}
 	.heading-base {
-		@apply text-headingMobileBase tablet:text-headingWebBase;
+		@apply mb-4 text-headingMobileBase tablet:text-headingWebBase;
 	}
 	.heading-small {
-		@apply text-headingMobileBase tablet:text-headingWebBase uppercase;
+		@apply mb-10 text-headingMobileBase tablet:text-headingWebBase uppercase;
 	}
 
 	.heading-link {
@@ -210,5 +212,36 @@
 
 	.link-hover {
 		@apply before:block before:absolute before:-inset-0 before:bg-yellow-200 relative inline-block;
+	}
+
+	.divider-blue {
+		@apply stroke-blue-500 h-3 tablet:h-4;
+	}
+	.divider-red {
+		@apply stroke-red-500 h-3 tablet:h-4;
+	}
+	.divider-purple {
+		@apply stroke-purple-500 h-3 tablet:h-4;
+	}
+	.divider-green {
+		@apply stroke-green-500 h-3 tablet:h-4;
+	}
+	.divider-yellow {
+		@apply stroke-yellow-500 h-3 tablet:h-4;
+	}
+	.responsive-header {
+		@apply col-start-1 col-span-4 tablet:col-start-3 tablet:col-span-8 tablet:-mx-16;
+	}
+	.hero {
+		@apply bg-purple-200 tablet:border-purple-900/[.08] tablet:border-2 -mx-10 p-10 col-start-1 col-span-4 tablet:p-16 tablet:rounded-[2rem] tablet:col-start-3 tablet:col-span-8 tablet:-mx-16 mb-32;
+	}
+	.section-block {
+		@apply mb-32 col-start-1 col-span-4 tablet:col-start-3 tablet:col-span-8;
+	}
+	.section-block-inside {
+		@apply flex flex-col gap-14;
+	}
+	.hero-mini {
+		@apply bg-purple-200 tablet:border-purple-900/[.08] border-2 p-10 col-start-1 col-span-4 tablet:p-16 rounded-[2rem] tablet:col-start-3 tablet:col-span-8  mb-32;
 	}
 }
