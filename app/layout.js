@@ -9,9 +9,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang='en' data-theme='dark'>
+		<html lang='en' data-theme='light'>
 			{/* <body className={inter.className}>{children}</body> */}
-			<body className='bg-gray-100'>{children}</body>
+			<body className='bg-gray-100 w-full'>{children}</body>
 		</html>
 	)
 }

@@ -130,9 +130,20 @@
 @layer base {
 	p,
 	b,
-	i {
-		@apply font-ui;
+	i,
+	a {
+		@apply font-ui text-gray-700;
 	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-heading text-gray-900;
+	}
+
 	.p-base {
 		@apply text-bodyMobileRegularBase tablet:text-bodyWebRegularBase;
 	}
@@ -141,10 +152,10 @@
 	}
 
 	.b-base {
-		@apply text-bodyMobileBoldBase tablet:text-bodyWebBoldBase;
+		@apply text-gray-900 text-bodyMobileBoldBase tablet:text-bodyWebBoldBase;
 	}
 	.b-large {
-		@apply text-bodyMobileBoldLarge tablet:text-bodyWebBoldLarge;
+		@apply text-gray-900 text-bodyMobileBoldLarge tablet:text-bodyWebBoldLarge;
 	}
 	.i-base {
 		@apply text-bodyMobileItalicBase tablet:text-bodyWebItalicBase;
@@ -153,22 +164,51 @@
 		@apply text-bodyMobileItalicLarge tablet:text-bodyWebItalicLarge;
 	}
 	.heading-bigger {
-		@apply font-heading text-headingMobileBigger tablet:text-headingWebBigger;
+		@apply text-headingMobileBigger tablet:text-headingWebBigger;
 	}
 	.heading-big {
-		@apply font-heading text-headingMobileBig tablet:text-headingWebBig;
+		@apply text-headingMobileBig tablet:text-headingWebBig;
 	}
 	.heading-base {
-		@apply font-heading text-headingMobileBase tablet:text-headingWebBase;
+		@apply text-headingMobileBase tablet:text-headingWebBase;
 	}
 	.heading-small {
-		@apply font-heading text-headingMobileBase tablet:text-headingWebBase uppercase;
+		@apply text-headingMobileBase tablet:text-headingWebBase uppercase;
 	}
 
 	.heading-link {
-		@apply heading-big hover:underline hover:underline-offset-2 cursor-pointer;
+		@apply heading-big cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2;
 	}
-	.p-link {
-		@apply p-base underline underline-offset-2 cursor-pointer;
+	.link-base {
+		@apply p-base text-gray-900 underline underline-offset-2 cursor-pointer hover:decoration-[0.125em];
+	}
+	.link-button-base {
+		@apply b-base underline underline-offset-2 hover:decoration-[0.125em] cursor-pointer;
+	}
+	.link-large {
+		@apply p-large text-gray-900 underline underline-offset-2 cursor-pointer hover:decoration-[0.125em];
+	}
+
+	.link-color-blue {
+		@apply text-blue-500;
+	}
+	.link-color-red {
+		@apply text-red-500;
+	}
+	.link-color-orange {
+		@apply text-orange-500;
+	}
+	.link-color-purple {
+		@apply text-purple-500;
+	}
+	.link-color-green {
+		@apply text-green-500;
+	}
+	.link-color-yellow {
+		@apply text-yellow-500;
+	}
+
+	.link-hover {
+		@apply before:block before:absolute before:-inset-0 before:bg-yellow-200 relative inline-block;
 	}
 }

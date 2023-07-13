@@ -555,80 +555,109 @@ video {
 
 p,
 	b,
-	i {
+	i,
+	a {
   font-family: ui, sans-serif;
+  --tw-text-opacity: 1;
+  color: hsl(var(--gray-700), var(--tw-text-opacity));
 }
 
-.p-base {
-  font-size: 0.875rem;
-  line-height: 24px;
+h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+  font-family: heading, sans-serif;
+  --tw-text-opacity: 1;
+  color: hsl(var(--gray-900), var(--tw-text-opacity));
+}
+
+.p-large {
+  font-size: 1.125rem;
+  line-height: 31px;
   font-weight: 400;
 }
 
 @media (min-width: 960px) {
-  .p-base {
-    font-size: 1rem;
-    line-height: 27px;
+  .p-large {
+    font-size: 1.313rem;
+    line-height: 36px;
     font-weight: 400;
   }
 }
 
-.b-base {
-  font-size: 0.875rem;
-  line-height: 24px;
+.b-large {
+  font-size: 1.125rem;
+  line-height: 31px;
   font-weight: 800;
+  --tw-text-opacity: 1;
+  color: hsl(var(--gray-900), var(--tw-text-opacity));
 }
 
 @media (min-width: 960px) {
-  .b-base {
+  .b-large {
+    font-size: 1.313rem;
+    line-height: 36px;
+    font-weight: 800;
+  }
+}
+
+.link-button-base {
+  font-size: 0.875rem;
+  line-height: 24px;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: hsl(var(--gray-900), var(--tw-text-opacity));
+}
+
+@media (min-width: 960px) {
+  .link-button-base {
     font-size: 1rem;
     line-height: 27px;
     font-weight: 800;
   }
 }
 
-.heading-link {
-  font-family: heading, sans-serif;
-  font-size: 1.188rem;
-  line-height: 21px;
-  font-weight: 500;
-}
-
-@media (min-width: 960px) {
-  .heading-link {
-    font-size: 1.75rem;
-    line-height: 31px;
-    font-weight: 500;
-  }
-}
-
-.heading-link {
+.link-button-base {
   cursor: pointer;
-}
-
-.heading-link:hover {
   text-decoration-line: underline;
   text-underline-offset: 2px;
 }
 
-.p-link {
-  font-size: 0.875rem;
-  line-height: 24px;
+.link-button-base:hover {
+  text-decoration-thickness: 0.125em;
+}
+
+.link-large {
+  font-size: 1.125rem;
+  line-height: 31px;
   font-weight: 400;
 }
 
 @media (min-width: 960px) {
-  .p-link {
-    font-size: 1rem;
-    line-height: 27px;
+  .link-large {
+    font-size: 1.313rem;
+    line-height: 36px;
     font-weight: 400;
   }
 }
 
-.p-link {
+.link-large {
   cursor: pointer;
+  --tw-text-opacity: 1;
+  color: hsl(var(--gray-900), var(--tw-text-opacity));
   text-decoration-line: underline;
   text-underline-offset: 2px;
+}
+
+.link-large:hover {
+  text-decoration-thickness: 0.125em;
+}
+
+.link-color-green {
+  --tw-text-opacity: 1;
+  color: hsl(var(--green-500), var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -731,6 +760,45 @@ p,
   --tw-backdrop-sepia:  ;
 }
 
+.col-span-8 {
+  grid-column: span 8 / span 8;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-10 {
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -740,36 +808,45 @@ p,
   background-color: hsl(var(--gray-100), var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
+.bg-purple-200 {
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--gray-200), var(--tw-bg-opacity));
+  background-color: hsl(var(--purple-200), var(--tw-bg-opacity));
 }
 
-.p-10 {
-  padding: 2.5rem;
+.fill-gray-900 {
+  fill: hsl(var(--gray-900), 1);
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-4 {
   padding-bottom: 1rem;
 }
 
-.text-gray-700 {
+.text-purple-700 {
   --tw-text-opacity: 1;
-  color: hsl(var(--gray-700), var(--tw-text-opacity));
-}
-
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: hsl(var(--gray-800), var(--tw-text-opacity));
-}
-
-.text-orange-500 {
-  --tw-text-opacity: 1;
-  color: hsl(var(--orange-500), var(--tw-text-opacity));
+  color: hsl(var(--purple-700), var(--tw-text-opacity));
 }
 
 @media (min-width: 960px) {
-  .tablet\:border-gray-900\/\[\.08\] {
-    border-color: hsl(var(--gray-900), .08);
+  .tablet\:rounded-\[2rem\] {
+    border-radius: 2rem;
+  }
+
+  .tablet\:border-purple-900\/\[\.08\] {
+    border-color: hsl(var(--purple-900), .08);
+  }
+}
+
+@media (min-width: 1248px) {
+  .desktop\:max-w-5xl {
+    max-width: 64rem;
   }
 }

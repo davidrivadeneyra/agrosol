@@ -34,7 +34,7 @@ module.exports = {
 			green: {
 				100: 'hsl(var(--green-100), <alpha-value>)',
 				200: 'hsl(var(--green-200), <alpha-value>)',
-				600: 'hsl(var(--green-500), <alpha-value>)',
+				500: 'hsl(var(--green-500), <alpha-value>)',
 				700: 'hsl(var(--green-700), <alpha-value>)',
 				800: 'hsl(var(--green-800), <alpha-value>)',
 				900: 'hsl(var(--green-900), <alpha-value>)',
@@ -42,7 +42,7 @@ module.exports = {
 			purple: {
 				100: 'hsl(var(--purple-100), <alpha-value>)',
 				200: 'hsl(var(--purple-200), <alpha-value>)',
-				600: 'hsl(var(--purple-500), <alpha-value>)',
+				500: 'hsl(var(--purple-500), <alpha-value>)',
 				700: 'hsl(var(--purple-700), <alpha-value>)',
 				800: 'hsl(var(--purple-800), <alpha-value>)',
 				900: 'hsl(var(--purple-900), <alpha-value>)',
@@ -50,7 +50,7 @@ module.exports = {
 			red: {
 				100: 'hsl(var(--red-100), <alpha-value>)',
 				200: 'hsl(var(--red-200), <alpha-value>)',
-				600: 'hsl(var(--red-500), <alpha-value>)',
+				500: 'hsl(var(--red-500), <alpha-value>)',
 				700: 'hsl(var(--red-700), <alpha-value>)',
 				800: 'hsl(var(--red-800), <alpha-value>)',
 				900: 'hsl(var(--red-900), <alpha-value>)',
@@ -58,7 +58,7 @@ module.exports = {
 			yellow: {
 				100: 'hsl(var(--yellow-100), <alpha-value>)',
 				200: 'hsl(var(--yellow-200), <alpha-value>)',
-				600: 'hsl(var(--yellow-500), <alpha-value>)',
+				500: 'hsl(var(--yellow-500), <alpha-value>)',
 				700: 'hsl(var(--yellow-700), <alpha-value>)',
 				800: 'hsl(var(--yellow-800), <alpha-value>)',
 				900: 'hsl(var(--yellow-900), <alpha-value>)',
