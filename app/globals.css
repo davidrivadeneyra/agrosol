@@ -3,13 +3,45 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
+	@font-face {
+		font-family: 'ui';
+		src: url('../public/fonts/Nunito-ExtraBold.woff2') format('woff2'),
+			url('../public/fonts/Nunito-ExtraBold.woff') format('woff');
+		font-weight: 800;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'ui';
+		src: url('../public/fonts/Nunito-Italic.woff2') format('woff2'),
+			url('../public/fonts/Nunito-Italic.woff') format('woff');
+		font-weight: 400;
+		font-display: swap;
+		font-style: italic;
+	}
+	@font-face {
+		font-family: 'ui';
+		src: url('../public/fonts/Nunito-Regular.woff2') format('woff2'),
+			url('../public/fonts/Nunito-Regular.woff') format('woff');
+		font-weight: 400;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'heading';
+		src: url('../public/fonts/raleway-bold.woff') format('woff');
+		font-weight: 700;
+		font-display: swap;
+		font-style: normal;
+	}
+	:root[data-theme='dark'] {
 		--gray-100: 220deg, 9%, 13%;
 		--gray-200: 224deg, 14%, 15%;
 		--gray-600: 222deg, 8%, 54%;
 		--gray-700: 215deg, 5%, 63%;
 		--gray-800: 225deg, 3%, 76%;
 		--gray-900: 240deg, 2%, 92%;
+		--gray-opa: 240deg, 2%, 92%, 8%;
 
 		--blue-200: 222deg, 24%, 19%;
 		--blue-300: 222deg, 37%, 35%;
@@ -48,50 +80,226 @@
 		--yellow-900: 38deg, 80%, 98%;
 	}
 
-	@media (prefers-color-scheme: light) {
-		:root {
-			--gray-100: 220deg, 60%, 99%;
-			--gray-200: 220deg, 73%, 97%;
-			--gray-600: 221deg, 9%, 59%;
-			--gray-700: 223deg, 15% 46%;
-			--gray-800: 222deg, 19%, 31%;
-			--gray-900: 221deg, 24%, 24%;
+	:root[data-theme='light'] {
+		--gray-100: 220deg, 60%, 99%;
+		--gray-200: 220deg, 73%, 97%;
+		--gray-600: 221deg, 9%, 59%;
+		--gray-700: 223deg, 15%, 46%;
+		--gray-800: 222deg, 19%, 31%;
+		--gray-900: 221deg, 24%, 24%;
 
-			--blue-200: 212deg, 90%, 96%;
-			--blue-300: 213deg, 100%, 93%;
-			--blue-500: 215deg, 94%, 50%;
+		--blue-200: 212deg, 90%, 96%;
+		--blue-300: 213deg, 100%, 93%;
+		--blue-500: 215deg, 94%, 50%;
 
-			--orange-200: 25deg, 90%, 96%;
-			--orange-300: 25deg, 95%, 92%;
-			--orange-500: 25deg, 79%, 43%;
+		--orange-200: 25deg, 90%, 96%;
+		--orange-300: 25deg, 95%, 92%;
+		--orange-500: 25deg, 79%, 43%;
 
-			--green-200: 38deg, 62%, 96%;
-			--green-300: 147deg, 69%, 90%;
-			--green-500: 148deg, 38%, 37%;
-			--green-700: 148deg, 19%, 44%;
-			--green-800: 148deg, 15%, 31%;
-			--green-900: 149deg, 24%, 24%;
+		--green-200: 138deg, 62%, 96%;
+		--green-300: 147deg, 69%, 90%;
+		--green-500: 148deg, 38%, 37%;
+		--green-700: 148deg, 19%, 44%;
+		--green-800: 148deg, 15%, 31%;
+		--green-900: 149deg, 24%, 24%;
 
-			--purple-200: 250deg, 67%, 96%;
-			--purple-300: 250deg, 94%, 94%;
-			--purple-500: 250deg, 75%, 64%;
-			--purple-700: 250deg, 18%, 55%;
-			--purple-800: 251deg, 20%, 40%;
-			--purple-900: 251deg, 24%, 33%;
+		--purple-200: 250deg, 67%, 96%;
+		--purple-300: 250deg, 94%, 94%;
+		--purple-500: 250deg, 75%, 64%;
+		--purple-700: 250deg, 18%, 55%;
+		--purple-800: 251deg, 20%, 40%;
+		--purple-900: 251deg, 24%, 33%;
 
-			--red-200: 348deg, 56%, 96%;
-			--red-300: 346deg, 94%, 94%;
-			--red-500: 345deg, 60%, 53%;
-			--red-700: 345deg, 16%, 52%;
-			--red-800: 344deg, 20%, 37%;
-			--red-900: 345deg, 24%, 30%;
+		--red-200: 348deg, 56%, 96%;
+		--red-300: 346deg, 94%, 94%;
+		--red-500: 345deg, 60%, 53%;
+		--red-700: 345deg, 16%, 52%;
+		--red-800: 344deg, 20%, 37%;
+		--red-900: 345deg, 24%, 30%;
 
-			--ywllow-200: 24deg, 71%, 96%;
-			--ywllow-300: 41deg, 94%, 93%;
-			--ywllow-500: 41deg, 90%, 32%;
-			--ywllow-700: 41deg, 16%, 46%;
-			--ywllow-800: 40deg, 15%, 31%;
-			--ywllow-900: 41deg, 24%, 24%;
-		}
+		--yellow-200: 24deg, 71%, 96%;
+		--yellow-300: 41deg, 94%, 93%;
+		--yellow-500: 41deg, 90%, 32%;
+		--yellow-700: 41deg, 16%, 46%;
+		--yellow-800: 40deg, 15%, 31%;
+		--yellow-900: 41deg, 24%, 24%;
+	}
+}
+
+@layer base {
+	p,
+	b,
+	i,
+	a,
+	ul,
+	li {
+		@apply font-ui text-gray-700;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-heading text-gray-900;
+	}
+
+	.container {
+		@apply grid grid-cols-4 gap-x-16 px-structurePadding tablet:grid-cols-12 tablet:gap-x-16;
+	}
+
+	.p-base {
+		@apply text-bodyMobileRegularBase tablet:text-bodyWebRegularBase;
+	}
+	.p-large {
+		@apply text-bodyMobileRegularLarge  tablet:text-bodyWebRegularLarge;
+	}
+
+	.b-base {
+		@apply text-gray-900 text-bodyMobileBoldBase tablet:text-bodyWebBoldBase;
+	}
+	.b-large {
+		@apply text-gray-900 text-bodyMobileBoldLarge tablet:text-bodyWebBoldLarge;
+	}
+	.i-base {
+		@apply text-bodyMobileItalicBase tablet:text-bodyWebItalicBase;
+	}
+	.i-large {
+		@apply text-bodyMobileItalicLarge tablet:text-bodyWebItalicLarge;
+	}
+	.heading-bigger {
+		@apply text-headingMobileBigger tablet:text-headingWebBigger;
+	}
+	.heading-big {
+		@apply mb-4 text-headingMobileBig tablet:text-headingWebBig;
+	}
+	.heading-base {
+		@apply mb-4 text-headingMobileBase tablet:text-headingWebBase;
+	}
+	.heading-small {
+		@apply mb-10 text-headingMobileBase tablet:text-headingWebBase uppercase;
+	}
+
+	.heading-link {
+		@apply heading-big cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2;
+	}
+
+	.heading-link-blue {
+		@apply heading-link decoration-blue-500;
+	}
+	.heading-link-green {
+		@apply heading-link decoration-green-500;
+	}
+	.heading-link-purple {
+		@apply heading-link decoration-purple-500;
+	}
+	.heading-link-orange {
+		@apply heading-link decoration-orange-500;
+	}
+	.heading-link-yellow {
+		@apply heading-link decoration-yellow-500;
+	}
+	.heading-link-red {
+		@apply heading-link decoration-red-500;
+	}
+	.link-base {
+		@apply p-base text-gray-900 underline underline-offset-2 cursor-pointer hover:decoration-[0.125em];
+	}
+	.link-button-base {
+		@apply b-base underline underline-offset-2 hover:decoration-[0.125em] cursor-pointer;
+	}
+	.link-large {
+		@apply p-large text-gray-900 underline underline-offset-2 cursor-pointer hover:decoration-[0.125em];
+	}
+
+	.link-color-blue {
+		@apply text-blue-500;
+	}
+	.link-color-red {
+		@apply text-red-500;
+	}
+	.link-color-orange {
+		@apply text-orange-500;
+	}
+	.link-color-purple {
+		@apply text-purple-500;
+	}
+	.link-color-green {
+		@apply text-green-500;
+	}
+	.link-color-yellow {
+		@apply text-yellow-500;
+	}
+
+	.link-hover {
+		@apply before:block before:absolute before:-inset-0 before:bg-yellow-200 relative inline-block;
+	}
+
+	.divider-blue {
+		@apply stroke-blue-500 h-3 tablet:h-4;
+	}
+	.divider-red {
+		@apply stroke-red-500 h-3 tablet:h-4;
+	}
+	.divider-purple {
+		@apply stroke-purple-500 h-3 tablet:h-4;
+	}
+	.divider-green {
+		@apply stroke-green-500 h-3 tablet:h-4;
+	}
+	.divider-yellow {
+		@apply stroke-yellow-500 h-3 tablet:h-4;
+	}
+	.divider-orange {
+		@apply stroke-orange-500 h-3 tablet:h-4;
+	}
+
+	.responsive-header {
+		@apply col-start-1 col-span-4 tablet:col-start-3 tablet:col-span-8 tablet:-mx-16;
+	}
+
+	.hero {
+		@apply border-y-2 tablet:border-2 -mx-structureMargin px-structurePadding py-10 col-start-1 col-span-4 tablet:p-16 tablet:rounded-[2rem] tablet:col-start-3 tablet:col-span-8 tablet:-mx-16 mb-32;
+	}
+	.hero-gray {
+		@apply hero bg-gray-200 border-gray-900/[5%];
+	}
+	.hero-green {
+		@apply hero bg-green-200 border-green-900/[5%];
+	}
+	.hero-purple {
+		@apply hero bg-purple-200 border-purple-900/[5%];
+	}
+	.hero-red {
+		@apply hero bg-red-200 border-red-900/[5%];
+	}
+	.hero-yellow {
+		@apply hero bg-yellow-200 border-yellow-900/[5%];
+	}
+
+	.hero-mini {
+		@apply bg-purple-200 border-gray-900/[5%] border-2 p-10 col-start-1 col-span-4 tablet:p-16 rounded-[2rem] tablet:col-start-3 tablet:col-span-8  mb-32;
+	}
+	.hero-mini-gray {
+		@apply hero-mini bg-gray-200 border-gray-900/[5%];
+	}
+	.hero-mini-green {
+		@apply hero-mini bg-green-200 border-green-900/[5%];
+	}
+	.hero-mini-purple {
+		@apply hero-mini bg-purple-200 border-purple-900/[5%];
+	}
+	.hero-mini-red {
+		@apply hero-mini bg-red-200 border-red-900/[5%];
+	}
+	.hero-mini-yellow {
+		@apply hero-mini bg-yellow-200 border-yellow-900/[5%];
+	}
+	.section-block {
+		@apply mb-32 col-start-1 col-span-4 tablet:col-start-3 tablet:col-span-8;
+	}
+	.section-block-inside {
+		@apply flex flex-col gap-14;
 	}
 }
