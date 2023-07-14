@@ -3,7 +3,7 @@
 module.exports = {
 	// mode: 'jit',
 	content: [
-		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
+		'./page/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
@@ -20,6 +20,7 @@ module.exports = {
 				700: 'hsl(var(--gray-700), <alpha-value>)',
 				800: 'hsl(var(--gray-800), <alpha-value>)',
 				900: 'hsl(var(--gray-900), <alpha-value>)',
+				opa: 'hsl(var(--opa), <alpha-value>)',
 			},
 			blue: {
 				100: 'hsl(var(--blue-100), <alpha-value>)',
@@ -140,7 +141,14 @@ module.exports = {
 			ui: 'ui, sans-serif',
 			heading: 'heading, sans-serif',
 		},
-		extend: {},
+		extend: {
+			padding: {
+				structurePadding: '2.5rem',
+			},
+			margin: {
+				structureMargin: '2.5rem',
+			},
+		},
 	},
 	plugins: [],
 }
