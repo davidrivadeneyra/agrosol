@@ -34,14 +34,13 @@
 		font-display: swap;
 		font-style: normal;
 	}
-	:root[data-theme='dark'] {
-		--gray-100: 220deg, 9%, 13%;
-		--gray-200: 224deg, 14%, 15%;
-		--gray-600: 222deg, 8%, 54%;
-		--gray-700: 215deg, 5%, 63%;
-		--gray-800: 225deg, 3%, 76%;
-		--gray-900: 240deg, 2%, 92%;
-		--gray-opa: 240deg, 2%, 92%, 8%;
+	:root {
+		--gray-100: 222deg, 25%, 10%;
+		--gray-200: 222deg, 25%, 13%;
+		--gray-600: 222deg, 8%, 61%;
+		--gray-700: 222deg, 5%, 64%;
+		--gray-800: 222deg, 3%, 77%;
+		--gray-900: 222deg, 2%, 92%;
 
 		--blue-200: 222deg, 24%, 19%;
 		--blue-300: 222deg, 37%, 35%;
@@ -83,17 +82,21 @@
 		--yellow-900: 38deg, 80%, 98%;
 	}
 
-	:root[data-theme='light'] {
-		--gray-100: 220deg, 60%, 99%;
-		--gray-200: 220deg, 73%, 97%;
-		--gray-600: 221deg, 9%, 59%;
-		--gray-700: 223deg, 15%, 46%;
-		--gray-800: 222deg, 19%, 31%;
-		--gray-900: 221deg, 24%, 24%;
+	@media (preferes-color-scheme: light) {
+		:root[data-theme='light'] {
+			--gray-100: 220deg, 60%, 99%;
+			--gray-200: 220deg, 73%, 97%;
+			--gray-600: 221deg, 11%, 51%;
+			--gray-700: 223deg, 14%, 39%;
+			--gray-800: 222deg, 19%, 31%;
+			--gray-900: 221deg, 24%, 24%;
 
-		--blue-200: 212deg, 90%, 96%;
-		--blue-300: 213deg, 100%, 93%;
-		--blue-500: 215deg, 94%, 50%;
+			--blue-200: 212deg, 90%, 96%;
+			--blue-300: 213deg, 100%, 93%;
+			--blue-500: 215deg, 94%, 50%;
+			--blue-700: 215deg, 29%, 44%;
+			--blue-800: 215deg, 35%, 31%;
+			--blue-900: 215deg, 54%, 24%;
 
 			--orange-200: 25deg, 90%, 96%;
 			--orange-300: 25deg, 95%, 92%;
