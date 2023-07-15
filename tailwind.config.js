@@ -20,12 +20,14 @@ module.exports = {
 				700: 'hsl(var(--gray-700), <alpha-value>)',
 				800: 'hsl(var(--gray-800), <alpha-value>)',
 				900: 'hsl(var(--gray-900), <alpha-value>)',
-				opa: 'hsl(var(--opa), <alpha-value>)',
 			},
 			blue: {
 				100: 'hsl(var(--blue-100), <alpha-value>)',
 				200: 'hsl(var(--blue-200), <alpha-value>)',
 				500: 'hsl(var(--blue-500), <alpha-value>)',
+				700: 'hsl(var(--blue-700), <alpha-value>)',
+				800: 'hsl(var(--blue-800), <alpha-value>)',
+				900: 'hsl(var(--blue-900), <alpha-value>)',
 			},
 			orange: {
 				100: 'hsl(var(--orange-100), <alpha-value>)',
@@ -67,53 +69,53 @@ module.exports = {
 		},
 		fontSize: {
 			bodyWebRegularBase: [
-				'1rem',
+				'1.063rem',
 				{ lineHeight: '27px', fontWeight: '400' },
 			],
 			bodyWebRegularLarge: [
 				'1.313rem',
-				{ lineHeight: '36px', fontWeight: '400' },
+				{ lineHeight: '33px', fontWeight: '400' },
 			],
 			bodyWebBoldBase: [
-				'1rem',
-				{ lineHeight: '27px', fontWeight: '800' },
+				'1.063rem',
+				{ lineHeight: '27px', fontWeight: '600' },
 			],
 			bodyWebBoldLarge: [
 				'1.313rem',
-				{ lineHeight: '36px', fontWeight: '800' },
+				{ lineHeight: '33px', fontWeight: '600' },
 			],
 			bodyWebItalicBase: [
-				'1rem',
+				'1.063rem',
 				{ lineHeight: '27px', fontSyle: 'italic', fontWeight: '400' },
 			],
 			bodyWebItalicLarge: [
 				'1.313rem',
-				{ lineHeight: '36px', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '33px', fontSyle: 'italic', fontWeight: '400' },
 			],
 
 			bodyMobileRegularBase: [
-				'0.875rem',
+				'0.938rem',
 				{ lineHeight: '24px', fontWeight: '400' },
 			],
 			bodyMobileRegularLarge: [
 				'1.125rem',
-				{ lineHeight: '31px', fontWeight: '400' },
+				{ lineHeight: '28px', fontWeight: '400' },
 			],
 			bodyMobileBoldBase: [
-				'0.875rem',
-				{ lineHeight: '24px', fontWeight: '800' },
+				'0.938rem',
+				{ lineHeight: '24px', fontWeight: '600' },
 			],
 			bodyMobileBoldLarge: [
 				'1.125rem',
-				{ lineHeight: '31px', fontWeight: '800' },
+				{ lineHeight: '28px', fontWeight: '600' },
 			],
 			bodyMobileItalicBase: [
-				'0.875rem',
+				'0.938rem',
 				{ lineHeight: '24px', fontSyle: 'italic', fontWeight: '400' },
 			],
 			bodyWebItalicLarge: [
 				'1.125rem',
-				{ lineHeight: '31px', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '28px', fontSyle: 'italic', fontWeight: '400' },
 			],
 			headingWebBigger: [
 				'3rem',

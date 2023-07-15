@@ -425,10 +425,10 @@ video {
 @font-face {
   font-family: 'ui';
 
-  src: url('../public/fonts/Nunito-ExtraBold.woff2') format('woff2'),
-			url('../public/fonts/Nunito-ExtraBold.woff') format('woff');
+  src: url('../public/fonts/wotfard-semibold-webfont.woff2')
+			format('woff2');
 
-  font-weight: 800;
+  font-weight: 600;
 
   font-display: swap;
 
@@ -438,8 +438,8 @@ video {
 @font-face {
   font-family: 'ui';
 
-  src: url('../public/fonts/Nunito-Italic.woff2') format('woff2'),
-			url('../public/fonts/Nunito-Italic.woff') format('woff');
+  src: url('../public/fonts/wotfard-regularitalic-webfont.woff2')
+			format('woff2');
 
   font-weight: 400;
 
@@ -451,8 +451,8 @@ video {
 @font-face {
   font-family: 'ui';
 
-  src: url('../public/fonts/Nunito-Regular.woff2') format('woff2'),
-			url('../public/fonts/Nunito-Regular.woff') format('woff');
+  src: url('../public/fonts/wotfard-regular-webfont.woff2')
+			format('woff2');
 
   font-weight: 400;
 
@@ -474,16 +474,18 @@ video {
 }
 
 :root[data-theme='dark'] {
-  --gray-100: 220deg, 9%, 13%;
-  --gray-200: 224deg, 14%, 15%;
-  --gray-600: 222deg, 8%, 54%;
-  --gray-700: 215deg, 5%, 63%;
-  --gray-800: 225deg, 3%, 76%;
-  --gray-900: 240deg, 2%, 92%;
-  --gray-opa: 240deg, 2%, 92%, 8%;
+  --gray-100: 222deg, 25%, 10%;
+  --gray-200: 222deg, 25%, 13%;
+  --gray-600: 222deg, 8%, 61%;
+  --gray-700: 222deg, 5%, 64%;
+  --gray-800: 222deg, 3%, 77%;
+  --gray-900: 222deg, 2%, 92%;
   --blue-200: 222deg, 24%, 19%;
   --blue-300: 222deg, 37%, 35%;
   --blue-500: 215deg, 100%, 61%;
+  --blue-700: 216deg, 24%, 70%;
+  --blue-800: 215deg, 67%, 94%;
+  --blue-900: 215deg, 90%, 98%;
   --orange-200: 23deg, 15%, 17%;
   --orange-300: 26deg, 37%, 25%;
   --orange-500: 24deg, 93%, 65%;
@@ -516,13 +518,16 @@ video {
 :root[data-theme='light'] {
   --gray-100: 220deg, 60%, 99%;
   --gray-200: 220deg, 73%, 97%;
-  --gray-600: 221deg, 9%, 59%;
-  --gray-700: 223deg, 15%, 46%;
+  --gray-600: 221deg, 11%, 51%;
+  --gray-700: 223deg, 14%, 39%;
   --gray-800: 222deg, 19%, 31%;
   --gray-900: 221deg, 24%, 24%;
   --blue-200: 212deg, 90%, 96%;
   --blue-300: 213deg, 100%, 93%;
   --blue-500: 215deg, 94%, 50%;
+  --blue-700: 215deg, 29%, 44%;
+  --blue-800: 215deg, 35%, 31%;
+  --blue-900: 215deg, 54%, 24%;
   --orange-200: 25deg, 90%, 96%;
   --orange-300: 25deg, 95%, 92%;
   --orange-500: 25deg, 79%, 43%;
@@ -592,14 +597,14 @@ h1,
 }
 
 .p-base {
-  font-size: 0.875rem;
+  font-size: 0.938rem;
   line-height: 24px;
   font-weight: 400;
 }
 
 @media (min-width: 960px) {
   .p-base {
-    font-size: 1rem;
+    font-size: 1.063rem;
     line-height: 27px;
     font-weight: 400;
   }
@@ -607,31 +612,31 @@ h1,
 
 .p-large {
   font-size: 1.125rem;
-  line-height: 31px;
+  line-height: 28px;
   font-weight: 400;
 }
 
 @media (min-width: 960px) {
   .p-large {
     font-size: 1.313rem;
-    line-height: 36px;
+    line-height: 33px;
     font-weight: 400;
   }
 }
 
 .b-large {
   font-size: 1.125rem;
-  line-height: 31px;
-  font-weight: 800;
+  line-height: 28px;
+  font-weight: 600;
   --tw-text-opacity: 1;
-  color: hsl(var(--gray-900), var(--tw-text-opacity));
+  color: hsl(var(--gray-800), var(--tw-text-opacity));
 }
 
 @media (min-width: 960px) {
   .b-large {
     font-size: 1.313rem;
-    line-height: 36px;
-    font-weight: 800;
+    line-height: 33px;
+    font-weight: 600;
   }
 }
 
@@ -681,19 +686,41 @@ h1,
   }
 }
 
-.link-button-base {
-  font-size: 0.875rem;
-  line-height: 24px;
-  font-weight: 800;
+.link-large {
+  font-size: 1.125rem;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@media (min-width: 960px) {
+  .link-large {
+    font-size: 1.313rem;
+    line-height: 33px;
+    font-weight: 400;
+  }
+}
+
+.link-large {
+  cursor: pointer;
   --tw-text-opacity: 1;
-  color: hsl(var(--gray-900), var(--tw-text-opacity));
+  color: hsl(var(--gray-800), var(--tw-text-opacity));
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
+.link-button-base {
+  font-size: 0.938rem;
+  line-height: 24px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: hsl(var(--gray-800), var(--tw-text-opacity));
 }
 
 @media (min-width: 960px) {
   .link-button-base {
-    font-size: 1rem;
+    font-size: 1.063rem;
     line-height: 27px;
-    font-weight: 800;
+    font-weight: 600;
   }
 }
 
@@ -704,32 +731,6 @@ h1,
 }
 
 .link-button-base:hover {
-  text-decoration-thickness: 0.125em;
-}
-
-.link-large {
-  font-size: 1.125rem;
-  line-height: 31px;
-  font-weight: 400;
-}
-
-@media (min-width: 960px) {
-  .link-large {
-    font-size: 1.313rem;
-    line-height: 36px;
-    font-weight: 400;
-  }
-}
-
-.link-large {
-  cursor: pointer;
-  --tw-text-opacity: 1;
-  color: hsl(var(--gray-900), var(--tw-text-opacity));
-  text-decoration-line: underline;
-  text-underline-offset: 2px;
-}
-
-.link-large:hover {
   text-decoration-thickness: 0.125em;
 }
 
@@ -760,17 +761,6 @@ h1,
 
 @media (min-width: 960px) {
   .divider-red {
-    height: 1rem;
-  }
-}
-
-.divider-purple {
-  height: 0.75rem;
-  stroke: hsl(var(--purple-500), 1);
-}
-
-@media (min-width: 960px) {
-  .divider-purple {
     height: 1rem;
   }
 }
@@ -806,8 +796,6 @@ h1,
   margin-left: -2.5rem;
   margin-right: -2.5rem;
   margin-bottom: 8rem;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 2.5rem;
@@ -1002,6 +990,14 @@ h1,
   margin-right: auto;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -1012,18 +1008,6 @@ h1,
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .flex {
@@ -1054,10 +1038,6 @@ h1,
   list-style-type: disc;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .flex-col-reverse {
   flex-direction: column-reverse;
 }
@@ -1068,15 +1048,6 @@ h1,
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-x-16 {
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
 }
 
 .rounded-\[2rem\] {
@@ -1092,11 +1063,6 @@ h1,
   fill: hsl(var(--gray-900), 1);
 }
 
-.px-structurePadding {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1109,6 +1075,11 @@ h1,
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: hsl(var(--gray-600), var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: hsl(var(--gray-700), var(--tw-text-opacity));
 }
 
 .text-green-700 {
@@ -1131,24 +1102,14 @@ h1,
   color: hsl(var(--purple-700), var(--tw-text-opacity));
 }
 
-.text-purple-500 {
-  --tw-text-opacity: 1;
-  color: hsl(var(--purple-500), var(--tw-text-opacity));
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: hsl(var(--blue-500), var(--tw-text-opacity));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: hsl(var(--red-500), var(--tw-text-opacity));
-}
-
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: hsl(var(--yellow-500), var(--tw-text-opacity));
+}
+
+.hover\:text-blue-500:hover {
+  --tw-text-opacity: 1;
+  color: hsl(var(--blue-500), var(--tw-text-opacity));
 }
 
 @media (min-width: 960px) {
@@ -1169,10 +1130,6 @@ h1,
     height: 4rem;
   }
 
-  .tablet\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
   .tablet\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1183,11 +1140,6 @@ h1,
 
   .tablet\:gap-12 {
     gap: 3rem;
-  }
-
-  .tablet\:gap-x-16 {
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
   }
 
   .tablet\:border-2 {
@@ -1216,20 +1168,20 @@ h1,
     text-decoration-line: underline;
   }
 
-  .group:hover .tablet\:group-hover\:decoration-red-500 {
-    text-decoration-color: hsl(var(--red-500), 1);
-  }
-
   .group:hover .tablet\:group-hover\:decoration-blue-500 {
     text-decoration-color: hsl(var(--blue-500), 1);
+  }
+
+  .group:hover .tablet\:group-hover\:decoration-green-500 {
+    text-decoration-color: hsl(var(--green-500), 1);
   }
 
   .group:hover .tablet\:group-hover\:decoration-purple-500 {
     text-decoration-color: hsl(var(--purple-500), 1);
   }
 
-  .group:hover .tablet\:group-hover\:decoration-green-500 {
-    text-decoration-color: hsl(var(--green-500), 1);
+  .group:hover .tablet\:group-hover\:decoration-red-500 {
+    text-decoration-color: hsl(var(--red-500), 1);
   }
 
   .group:hover .tablet\:group-hover\:decoration-2 {

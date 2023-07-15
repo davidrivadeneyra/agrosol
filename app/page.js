@@ -11,21 +11,23 @@ export default function Home() {
 
 			<main className='hero-gray'>
 				{/* <h4 className='heading-small text-orange-500'>Resumen</h4> */}
-				<p className='p-large text-purple-700'>
-					Mi nombre es David, soy{' '}
+				<p className='p-large text-gray-700'>
+					Mi nombre es David🖖, soy{' '}
 					<span className='b-large'>Product Designer</span> y{' '}
-					<span className='link-large'>profesor</span>🖖. Por más de 4
-					años he estado creando productos que conecten con los
-					usuarios y ayuden a las empresas a alcanzar sus objetivos🎯.
-					Me encanta la colaboración en equipo, las interfaces
-					hermosas✨ y las buenas prácticas. *
+					<span className='link-large hover:text-blue-500'>
+						profesor
+					</span>
+					. Por más de 4 años he estado creando productos que conecten
+					con los usuarios y ayuden a las empresas a alcanzar sus
+					objetivos🎯. Me encanta la colaboración en equipo, las
+					interfaces hermosas✨ y las buenas prácticas. *
 				</p>
 			</main>
 
 			<section className='section-block mb-0'>
-				<h4 className='heading-small text-yellow-500'>
+				<h2 className='heading-small text-yellow-500'>
 					Proyectos destacados
-				</h4>
+				</h2>
 			</section>
 
 			<section className='section-block'>
@@ -45,7 +47,7 @@ export default function Home() {
 							Ve al proyecto
 						</button>
 					</div>
-					<img src='/assets/img/plan-grupal-tiny.png' alt='' />
+					<img src='/assets/img/pg.png' alt='' />
 				</Link>
 				<Link
 					href='/plan-empresas'
