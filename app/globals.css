@@ -5,24 +5,24 @@
 @layer base {
 	@font-face {
 		font-family: 'ui';
-		src: url('../public/fonts/Nunito-ExtraBold.woff2') format('woff2'),
-			url('../public/fonts/Nunito-ExtraBold.woff') format('woff');
-		font-weight: 800;
+		src: url('../public/fonts/wotfard-semibold-webfont.woff2')
+			format('woff2');
+		font-weight: 600;
 		font-display: swap;
 		font-style: normal;
 	}
 	@font-face {
 		font-family: 'ui';
-		src: url('../public/fonts/Nunito-Italic.woff2') format('woff2'),
-			url('../public/fonts/Nunito-Italic.woff') format('woff');
+		src: url('../public/fonts/wotfard-regularitalic-webfont.woff2')
+			format('woff2');
 		font-weight: 400;
 		font-display: swap;
 		font-style: italic;
 	}
 	@font-face {
 		font-family: 'ui';
-		src: url('../public/fonts/Nunito-Regular.woff2') format('woff2'),
-			url('../public/fonts/Nunito-Regular.woff') format('woff');
+		src: url('../public/fonts/wotfard-regular-webfont.woff2')
+			format('woff2');
 		font-weight: 400;
 		font-display: swap;
 		font-style: normal;
@@ -34,7 +34,7 @@
 		font-display: swap;
 		font-style: normal;
 	}
-	:root {
+	:root[data-theme='dark'] {
 		--gray-100: 220deg, 9%, 13%;
 		--gray-200: 224deg, 14%, 15%;
 		--gray-600: 222deg, 8%, 54%;
@@ -46,6 +46,9 @@
 		--blue-200: 222deg, 24%, 19%;
 		--blue-300: 222deg, 37%, 35%;
 		--blue-500: 215deg, 100%, 61%;
+		--blue-700: 216deg, 24%, 70%;
+		--blue-800: 215deg, 67%, 94%;
+		--blue-900: 215deg, 90%, 98%;
 
 		--orange-200: 23deg, 15%, 17%;
 		--orange-300: 26deg, 37%, 25%;
@@ -80,18 +83,17 @@
 		--yellow-900: 38deg, 80%, 98%;
 	}
 
-	@media (prefers-color-scheme: light) {
-		:root {
-			--gray-100: 220deg, 60%, 99%;
-			--gray-200: 220deg, 73%, 97%;
-			--gray-600: 221deg, 9%, 59%;
-			--gray-700: 223deg, 15%, 46%;
-			--gray-800: 222deg, 19%, 31%;
-			--gray-900: 221deg, 24%, 24%;
+	:root[data-theme='light'] {
+		--gray-100: 220deg, 60%, 99%;
+		--gray-200: 220deg, 73%, 97%;
+		--gray-600: 221deg, 9%, 59%;
+		--gray-700: 223deg, 15%, 46%;
+		--gray-800: 222deg, 19%, 31%;
+		--gray-900: 221deg, 24%, 24%;
 
-			--blue-200: 212deg, 90%, 96%;
-			--blue-300: 213deg, 100%, 93%;
-			--blue-500: 215deg, 94%, 50%;
+		--blue-200: 212deg, 90%, 96%;
+		--blue-300: 213deg, 100%, 93%;
+		--blue-500: 215deg, 94%, 50%;
 
 			--orange-200: 25deg, 90%, 96%;
 			--orange-300: 25deg, 95%, 92%;
@@ -159,10 +161,10 @@
 	}
 
 	.b-base {
-		@apply text-gray-900 text-bodyMobileBoldBase tablet:text-bodyWebBoldBase;
+		@apply text-gray-800 text-bodyMobileBoldBase tablet:text-bodyWebBoldBase;
 	}
 	.b-large {
-		@apply text-gray-900 text-bodyMobileBoldLarge tablet:text-bodyWebBoldLarge;
+		@apply text-gray-800 text-bodyMobileBoldLarge tablet:text-bodyWebBoldLarge;
 	}
 	.i-base {
 		@apply text-bodyMobileItalicBase tablet:text-bodyWebItalicBase;
@@ -206,13 +208,13 @@
 		@apply heading-link decoration-red-500;
 	}
 	.link-base {
-		@apply p-base text-gray-900 underline underline-offset-2 cursor-pointer hover:decoration-[0.125em];
+		@apply p-base text-gray-800 underline underline-offset-2 cursor-pointer;
+	}
+	.link-large {
+		@apply p-large text-gray-800 underline underline-offset-2 cursor-pointer;
 	}
 	.link-button-base {
 		@apply b-base underline underline-offset-2 hover:decoration-[0.125em] cursor-pointer;
-	}
-	.link-large {
-		@apply p-large text-gray-900 underline underline-offset-2 cursor-pointer hover:decoration-[0.125em];
 	}
 
 	.link-color-blue {
@@ -262,7 +264,7 @@
 	}
 
 	.hero {
-		@apply border-y-2 tablet:border-2 -mx-structureMargin px-structurePadding py-10 col-start-1 col-span-4 tablet:p-16 tablet:rounded-[2rem] tablet:col-start-3 tablet:col-span-8 tablet:-mx-16 mb-32;
+		@apply tablet:border-2 -mx-structureMargin px-structurePadding py-10 col-start-1 col-span-4 tablet:p-16 tablet:rounded-[2rem] tablet:col-start-3 tablet:col-span-8 tablet:-mx-16 mb-32;
 	}
 	.hero-gray {
 		@apply hero bg-gray-200 border-gray-900/[5%];
