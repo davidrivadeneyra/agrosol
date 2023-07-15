@@ -515,8 +515,8 @@ video {
   --yellow-900: 38deg, 80%, 98%;
 }
 
-@media (preferes-color-scheme: light) {
-  :root[data-theme='light'] {
+@media (prefers-color-scheme: light) {
+  :root {
     --gray-100: 220deg, 60%, 99%;
     --gray-200: 220deg, 73%, 97%;
     --gray-600: 221deg, 11%, 51%;
