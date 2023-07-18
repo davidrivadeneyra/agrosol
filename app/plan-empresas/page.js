@@ -43,7 +43,7 @@ export default function PlanEmpresas() {
 				<div className='section-block-inside'>
 					<div>
 						<h3 className='heading-big mb-6'>
-							Duración del proyecto 🕑
+							Duración del proyecto ⏳
 						</h3>
 						<p className='p-base '>
 							Todo el proceso de investigación tuvo una duración
@@ -59,11 +59,11 @@ export default function PlanEmpresas() {
 						</h3>
 						<ul className='p-base space-y-2'>
 							<li className='flex'>
-								<span className='p-base pr-3'>🖌</span>
+								<span className='p-base pr-3'>🔥</span>
 								<span>Mi rol: Product Designer</span>
 							</li>
 							<li className='flex'>
-								<span className='p-base pr-3'>🖌</span>
+								<span className='p-base pr-3'>🔥</span>
 								<span>
 									Colaboré con: un pasante UX, directivos,
 									área de ventas, desarrolladores frontend y
@@ -77,9 +77,9 @@ export default function PlanEmpresas() {
 
 			<section className='mb-32 col-span-full'>
 				<img
-					src='./assets/img/pg/ed-plan-empresas-big.png'
+					src='./assets/img/pg/pg-final.jpg'
 					alt=''
-					className='mb-3'
+					className='mb-3 rounded'
 				/>
 				<p className='p-base italic text-center text-gray-600'>
 					Una de las vistas finales del proyecto.
@@ -382,9 +382,11 @@ export default function PlanEmpresas() {
 						</h3>
 						<p className='p-base mb-3 '>
 							Testeamos los wireframes de media fidelidad con unos
-							18 usuarios, usamos maze pare eso, y los usuarios{' '}
-							<span className='b-base'>no lo entendieron</span> .
-							Fue un momento de aprendizaje. Noté que no estaba
+							18 usuarios, usamos maze con ese fin, y...{' '}
+							<span className='b-base'>
+								los usuarios no lo entendieron
+							</span>{' '}
+							. Fue un momento de aprendizaje. Noté que no estaba
 							siendo claro para los usuarios cómo ver el resumen
 							de estudios de cada usuario. Además, hice unas
 							entrevistas vía meet con 10 contactos y fue evidente
@@ -408,9 +410,166 @@ export default function PlanEmpresas() {
 					className='mb-3 rounded'
 				/>
 				<p className='p-base italic text-center text-gray-600'>
-					Capturas de 1 pruebas que salió mal y de la posterior que
-					tuvo mejores resultados
+					Capturas los test de usabilidad: Arriba a la izquierda una
+					prueba que falló en todo. Abajo una iteración que tuvo
+					mejores resultados
 				</p>
+			</section>
+			<Divider className='divider-red'></Divider>
+			<section className='section-block mb-10'>
+				<div className='section-block-inside'>
+					<div>
+						<h4 className='heading-small text-purple-500'>
+							Vamos por los diseños en alta fidelidad
+						</h4>
+
+						<h3 className='heading-big'>
+							Trabajando en el UI 🌈🌟👌
+						</h3>
+						<p className='p-base mb-3'>
+							Pensé que contaba con suficiente data e información
+							testeada para proceder con crear los diseños en alta
+							fidelidad. Sin embargo,{' '}
+							<span className='b-base'>hubieron mas cambios</span>{' '}
+							, esta vez fue de parte de los stakeholders,, estás
+							fueron las indicaciones:
+						</p>
+						<ul className='p-base space-y-2'>
+							<li className='flex'>
+								<span className='p-base pr-3'>⛳</span>
+								<span>
+									En su opinión, no era suficiente mostrar la
+									vista con una lista de usuarios (en la
+									pestaña Dashboard), para ellos era necesaria
+									otra sección en el menú que contenga al
+									total de las personas que actualmente son
+									parte de mi empresa, como lo que ya no son
+									parte. Esta sección del menú se debería
+									llamar Mi equipo. No estuve de acuerdo con
+									esa decisión, pero no hubo oportunidad de
+									negociarla así que cedí, uno debe aprender a
+									ceder a los tomadores decisiones, y entender
+									que muchas veces tienen sus razones.{' '}
+								</span>
+							</li>
+							<li className='flex'>
+								<span className='p-base pr-3'>⛳</span>
+								<span>
+									Por otro lado, en el modal de Agregar más
+									licencias ya no se crearía la funcionalidad
+									de compra desde el modal, si no, el botón de
+									Quiero más licencias abriría un formulario y
+									la información recolectaba iría a Soporte,
+									esto para alargar más el tiempo de
+									desarrollo.
+								</span>
+							</li>
+							<li className='flex'>
+								<span className='p-base pr-3'>⛳</span>
+								<span>
+									Un extra, los directivos indicaron su
+									afinidad con colocar el logo de la
+									empresa/startup que adquiera el plan de
+									empresas en lugar del logo de EDteam, así se
+									sentirían mejor identificados con su
+									interfaz.
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section className='section-block mb-0'>
+				<div className='hero-mini-gray grid desktop:grid-cols-2 items-center gap-4'>
+					<div>
+						<h4 className='heading-base text-purple-500 mb-lg'>
+							Video presentación del prototipo final 🎬
+						</h4>
+						<p className='p-base text-purple-700'>
+							Este es un video del prototipo clicleable, esto fue
+							entregado para revisión final con los directivos.
+							Fue aceptado y luego pasamos al handoff.
+						</p>
+					</div>
+					<img
+						src='./assets/img/pg/play.png'
+						alt=''
+						className='mb-3 rounded'
+					/>
+				</div>
+			</section>
+			<Divider className='divider-purple'></Divider>
+			<section className='section-block mb-10'>
+				<div className='section-block-inside'>
+					<div>
+						<h3 className='heading-big'>Resultados 🌈👌</h3>
+
+						<ul className='p-base space-y-2'>
+							<li className='flex'>
+								<span className='p-base pr-3'>🌟</span>
+								<span>
+									Lo mejor fue la ventas B2B subieron un 6% en
+									los primeros 2 meses luego del lanzamiento,
+									ya que ahora el área de ventas tenía un
+									producto que las empresas podían testear
+									antes de comprar los planes.
+								</span>
+							</li>
+							<li className='flex'>
+								<span className='p-base pr-3'>🌟</span>
+								<span>
+									Hubo satisfacción desde el lado de los
+									usuarios que ya eran clientes de EDteam, un
+									63% de los usuarios que ya eran clientes de
+									EDteam manifestó que estaban satisfechos con
+									el nuevo producto (aunque tenían feedback
+									que darnos).
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section className='section-block'>
+				<div className='section-block-inside'>
+					<div>
+						<h3 className='heading-big'>Aprendizajes 📚</h3>
+
+						<ul className='p-base space-y-2'>
+							<li className='flex'>
+								<span className='p-base pr-3'>☁</span>
+								<span>
+									El trabajo fue durísimo, fueron meses de
+									iteraciones, aprendizajes, frustaciones,
+									errores, fracasos, muchas reuniones, etc.
+									Las ideas que pensábamos que funcionaría no
+									lo hacían, en fin. Me ayudó a mejorar mi
+									resiliencia.
+								</span>
+							</li>
+							<li className='flex'>
+								<span className='p-base pr-3'>☁</span>
+								<span>
+									Valoro que este proyecto me ayudó a mejorar
+									mis habilidades de comunicación, hubo
+									constante contacto con los desarrolladores,
+									directivos y otras áreas de la empresa, la
+									buena comunicación fue clave.
+								</span>
+							</li>
+							<li className='flex'>
+								<span className='p-base pr-3'>☁</span>
+								<span>
+									Además, siento que aprendí a delegar
+									trabajos, fuimos 2 UX en el proceso, yo
+									estaba a cargo y a veces (muchas veces) yo
+									quería ocuparte de mucho, pero debía
+									aprender a delegar.
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</section>
 		</div>
 	)
