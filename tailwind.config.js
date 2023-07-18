@@ -9,10 +9,13 @@ module.exports = {
 	],
 	theme: {
 		screens: {
-			tablet: '960px',
+			tablet: '768px',
 			desktop: '1248px',
 		},
 		colors: {
+			white: {
+				white: 'hsl(var(--white), <alpha-value>)',
+			},
 			gray: {
 				100: 'hsl(var(--gray-100), <alpha-value>)',
 				200: 'hsl(var(--gray-200), <alpha-value>)',
@@ -22,45 +25,45 @@ module.exports = {
 				900: 'hsl(var(--gray-900), <alpha-value>)',
 			},
 			blue: {
-				100: 'hsl(var(--blue-100), <alpha-value>)',
 				200: 'hsl(var(--blue-200), <alpha-value>)',
+				300: 'hsl(var(--blue-300), <alpha-value>)',
 				500: 'hsl(var(--blue-500), <alpha-value>)',
 				700: 'hsl(var(--blue-700), <alpha-value>)',
 				800: 'hsl(var(--blue-800), <alpha-value>)',
 				900: 'hsl(var(--blue-900), <alpha-value>)',
 			},
 			orange: {
-				100: 'hsl(var(--orange-100), <alpha-value>)',
 				200: 'hsl(var(--orange-200), <alpha-value>)',
+				300: 'hsl(var(--orange-300), <alpha-value>)',
 				500: 'hsl(var(--orange-500), <alpha-value>)',
 			},
 			green: {
-				100: 'hsl(var(--green-100), <alpha-value>)',
 				200: 'hsl(var(--green-200), <alpha-value>)',
+				300: 'hsl(var(--green-300), <alpha-value>)',
 				500: 'hsl(var(--green-500), <alpha-value>)',
 				700: 'hsl(var(--green-700), <alpha-value>)',
 				800: 'hsl(var(--green-800), <alpha-value>)',
 				900: 'hsl(var(--green-900), <alpha-value>)',
 			},
 			purple: {
-				100: 'hsl(var(--purple-100), <alpha-value>)',
 				200: 'hsl(var(--purple-200), <alpha-value>)',
+				300: 'hsl(var(--purple-300), <alpha-value>)',
 				500: 'hsl(var(--purple-500), <alpha-value>)',
 				700: 'hsl(var(--purple-700), <alpha-value>)',
 				800: 'hsl(var(--purple-800), <alpha-value>)',
 				900: 'hsl(var(--purple-900), <alpha-value>)',
 			},
 			red: {
-				100: 'hsl(var(--red-100), <alpha-value>)',
 				200: 'hsl(var(--red-200), <alpha-value>)',
+				300: 'hsl(var(--red-300), <alpha-value>)',
 				500: 'hsl(var(--red-500), <alpha-value>)',
 				700: 'hsl(var(--red-700), <alpha-value>)',
 				800: 'hsl(var(--red-800), <alpha-value>)',
 				900: 'hsl(var(--red-900), <alpha-value>)',
 			},
 			yellow: {
-				100: 'hsl(var(--yellow-100), <alpha-value>)',
 				200: 'hsl(var(--yellow-200), <alpha-value>)',
+				300: 'hsl(var(--yellow-300), <alpha-value>)',
 				500: 'hsl(var(--yellow-500), <alpha-value>)',
 				700: 'hsl(var(--yellow-700), <alpha-value>)',
 				800: 'hsl(var(--yellow-800), <alpha-value>)',
@@ -70,73 +73,84 @@ module.exports = {
 		fontSize: {
 			bodyWebRegularBase: [
 				'1.063rem',
-				{ lineHeight: '27px', fontWeight: '400' },
+				{ lineHeight: '180%', fontWeight: '400' },
 			],
 			bodyWebRegularLarge: [
 				'1.313rem',
-				{ lineHeight: '33px', fontWeight: '400' },
+				{ lineHeight: '180%', fontWeight: '400' },
 			],
 			bodyWebBoldBase: [
 				'1.063rem',
-				{ lineHeight: '27px', fontWeight: '600' },
+				{ lineHeight: '180%', fontWeight: '600' },
 			],
 			bodyWebBoldLarge: [
 				'1.313rem',
-				{ lineHeight: '33px', fontWeight: '600' },
+				{ lineHeight: '180%', fontWeight: '600' },
 			],
 			bodyWebItalicBase: [
 				'1.063rem',
-				{ lineHeight: '27px', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '180%', fontSyle: 'italic', fontWeight: '400' },
 			],
 			bodyWebItalicLarge: [
 				'1.313rem',
-				{ lineHeight: '33px', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '180%', fontSyle: 'italic', fontWeight: '400' },
 			],
 
 			bodyMobileRegularBase: [
-				'0.938rem',
-				{ lineHeight: '24px', fontWeight: '400' },
+				'.938rem',
+				{ lineHeight: '180%', fontWeight: '400' },
 			],
 			bodyMobileRegularLarge: [
 				'1.125rem',
-				{ lineHeight: '28px', fontWeight: '400' },
+				{ lineHeight: '180%', fontWeight: '400' },
 			],
 			bodyMobileBoldBase: [
-				'0.938rem',
-				{ lineHeight: '24px', fontWeight: '600' },
+				'.938rem',
+				{ lineHeight: '180%', fontWeight: '600' },
 			],
 			bodyMobileBoldLarge: [
 				'1.125rem',
-				{ lineHeight: '28px', fontWeight: '600' },
+				{ lineHeight: '180%', fontWeight: '600' },
 			],
 			bodyMobileItalicBase: [
-				'0.938rem',
-				{ lineHeight: '24px', fontSyle: 'italic', fontWeight: '400' },
+				'.938rem',
+				{ lineHeight: '180%', fontSyle: 'italic', fontWeight: '400' },
 			],
 			bodyWebItalicLarge: [
 				'1.125rem',
-				{ lineHeight: '28px', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '180%', fontSyle: 'italic', fontWeight: '400' },
 			],
 			headingWebBigger: [
 				'3rem',
-				{ lineHeight: '53px', fontWeight: '500' },
+				{ lineHeight: '120%', fontWeight: '700' },
 			],
 			headingWebBig: [
 				'1.75rem',
-				{ lineHeight: '31px', fontWeight: '500' },
+				{ lineHeight: '120%', fontWeight: '700' },
 			],
-			headingWebBase: ['1rem', { lineHeight: '19px', fontWeight: '500' }],
+			headingWebBase: [
+				'1.188rem',
+				{ lineHeight: '120%', fontWeight: '700' },
+			],
+			headingWebSmall: [
+				'1.063rem',
+				{ lineHeight: '120%', fontWeight: '700' },
+			],
 			headingMobileBigger: [
-				'2rem',
-				{ lineHeight: '35px', fontWeight: '500' },
+				'2.25rem',
+				{ lineHeight: '120%', fontWeight: '700' },
 			],
 			headingMobileBig: [
-				'1.188rem',
-				{ lineHeight: '21px', fontWeight: '500' },
+				'1.313rem',
+				{ lineHeight: '120%', fontWeight: '700' },
 			],
 			headingMobileBase: [
-				'.875rem',
-				{ lineHeight: '15px', fontWeight: '500' },
+				'1.063rem',
+				{ lineHeight: '120%', fontWeight: '700' },
+			],
+			headingMobileSmall: [
+				'.938rem',
+				{ lineHeight: '120%', fontWeight: '700' },
 			],
 		},
 		fontFamily: {
