@@ -89,11 +89,11 @@ module.exports = {
 			],
 			bodyWebItalicBase: [
 				'1.063rem',
-				{ lineHeight: '180%', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '180%', fontStyle: 'italic', fontWeight: '400' },
 			],
 			bodyWebItalicLarge: [
 				'1.313rem',
-				{ lineHeight: '180%', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '180%', fontStyle: 'italic', fontWeight: '400' },
 			],
 
 			bodyMobileRegularBase: [
@@ -114,43 +114,44 @@ module.exports = {
 			],
 			bodyMobileItalicBase: [
 				'.938rem',
-				{ lineHeight: '180%', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '180%', fontStyle: 'italic', fontWeight: '400' },
 			],
 			bodyWebItalicLarge: [
 				'1.125rem',
-				{ lineHeight: '180%', fontSyle: 'italic', fontWeight: '400' },
+				{ lineHeight: '180%', fontStyle: 'italic', fontWeight: '400' },
 			],
+
 			headingWebBigger: [
 				'3rem',
-				{ lineHeight: '120%', fontWeight: '700' },
+				{ lineHeight: '120%', fontWeight: '800' },
 			],
 			headingWebBig: [
 				'1.75rem',
-				{ lineHeight: '120%', fontWeight: '700' },
+				{ lineHeight: '120%', fontWeight: '800' },
 			],
 			headingWebBase: [
 				'1.188rem',
-				{ lineHeight: '120%', fontWeight: '700' },
+				{ lineHeight: '120%', fontWeight: '800' },
 			],
 			headingWebSmall: [
-				'1.063rem',
-				{ lineHeight: '120%', fontWeight: '700' },
+				'1rem',
+				{ lineHeight: '120%', fontWeight: '600' },
 			],
 			headingMobileBigger: [
 				'2.25rem',
-				{ lineHeight: '120%', fontWeight: '700' },
+				{ lineHeight: '120%', fontWeight: '800' },
 			],
 			headingMobileBig: [
 				'1.313rem',
-				{ lineHeight: '120%', fontWeight: '700' },
+				{ lineHeight: '120%', fontWeight: '800' },
 			],
 			headingMobileBase: [
 				'1.063rem',
-				{ lineHeight: '120%', fontWeight: '700' },
+				{ lineHeight: '120%', fontWeight: '800' },
 			],
 			headingMobileSmall: [
-				'.938rem',
-				{ lineHeight: '120%', fontWeight: '700' },
+				'.875rem',
+				{ lineHeight: '120%', fontWeight: '600' },
 			],
 		},
 		fontFamily: {
