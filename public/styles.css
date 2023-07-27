@@ -568,9 +568,6 @@ video {
   --yellow-900: 41deg, 24%, 24%;
 }
 
-@media (prefers-color-scheme: light) {
-}
-
 @media (prefers-color-scheme: lime) {
 }
 
@@ -1456,20 +1453,8 @@ body::selection {
   height: 100%;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .grow {
@@ -1605,26 +1590,6 @@ body::selection {
   background-color: hsl(var(--purple-300), var(--tw-bg-opacity));
 }
 
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--gray-700), var(--tw-bg-opacity));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--blue-500), var(--tw-bg-opacity));
-}
-
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--blue-700), var(--tw-bg-opacity));
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--blue-300), var(--tw-bg-opacity));
-}
-
 .fill-gray-900 {
   fill: hsl(var(--gray-900), 1);
 }
@@ -1670,6 +1635,10 @@ body::selection {
   padding-bottom: 5rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1690,16 +1659,12 @@ body::selection {
   padding-right: 1rem;
 }
 
-.pt-40 {
-  padding-top: 10rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
 }
 
 .text-center {
@@ -2029,18 +1994,6 @@ body::selection {
     text-decoration-line: underline;
   }
 
-  .group:hover .tablet\:group-hover\:decoration-blue-500 {
-    text-decoration-color: hsl(var(--blue-500), 1);
-  }
-
-  .group:hover .tablet\:group-hover\:decoration-green-500 {
-    text-decoration-color: hsl(var(--green-500), 1);
-  }
-
-  .group:hover .tablet\:group-hover\:decoration-purple-500 {
-    text-decoration-color: hsl(var(--purple-500), 1);
-  }
-
   .group:hover .tablet\:group-hover\:decoration-red-500 {
     text-decoration-color: hsl(var(--red-500), 1);
   }
@@ -2057,6 +2010,12 @@ body::selection {
     text-underline-offset: 4px;
   }
 
+  .group:hover .tablet\:group-hover\:before\:bg-blue-300::before {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--blue-300), var(--tw-bg-opacity));
+  }
+
   .group:hover .tablet\:group-hover\:before\:bg-green-300::before {
     content: var(--tw-content);
     --tw-bg-opacity: 1;
@@ -2067,12 +2026,6 @@ body::selection {
     content: var(--tw-content);
     --tw-bg-opacity: 1;
     background-color: hsl(var(--purple-300), var(--tw-bg-opacity));
-  }
-
-  .group:hover .tablet\:group-hover\:before\:bg-blue-300::before {
-    content: var(--tw-content);
-    --tw-bg-opacity: 1;
-    background-color: hsl(var(--blue-300), var(--tw-bg-opacity));
   }
 }
 
