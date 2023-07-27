@@ -48,9 +48,9 @@ export default function Header() {
 	const [windowSize, setWindowSize] = useState([windowInnerWidth])
 
 	const [documentWidth, setDocumentWidth] = useState([
-		document.documentElement.clientWidth,
+		documentDocumentElementClientWidth,
 	])
-	// console.log(documentDocumentElementClientWidth)
+	console.log(documentDocumentElementClientWidth)
 
 	const headerRef = useRef(null)
 
