@@ -34,11 +34,23 @@ export default function Header() {
 
 	const [isClipboard, setClipboardCopied] = useState(false)
 
-	const [windowSize, setWindowSize] = useState([window.innerWidth])
+	let windowInnerWidth
+	let documentDocumentElementClientWidth
+
+	if (typeof window !== 'undefined') {
+		windowInnerWidth = window.innerWidth
+	}
+	if (typeof document !== 'undefined') {
+		documentDocumentElementClientWidth =
+			document.documentElement.clientWidth
+	}
+
+	const [windowSize, setWindowSize] = useState([windowInnerWidth])
 
 	const [documentWidth, setDocumentWidth] = useState([
 		document.documentElement.clientWidth,
 	])
+	// console.log(documentDocumentElementClientWidth)
 
 	const headerRef = useRef(null)
 
@@ -54,10 +66,17 @@ export default function Header() {
 		function handleHeaderWidthResize() {
 			setWidth(headerRef.current.clientWidth)
 		}
-		window.addEventListener('resize', handleHeaderWidthResize)
+		if (typeof window !== 'undefined') {
+			window.addEventListener('resize', handleHeaderWidthResize)
 
-		return () => {
-			window.removeEventListener('resize', handleHeaderWidthResize)
+			return () => {
+				if (typeof window !== 'undefined') {
+					window.removeEventListener(
+						'resize',
+						handleHeaderWidthResize
+					)
+				}
+			}
 		}
 	}, [])
 
@@ -65,21 +84,30 @@ export default function Header() {
 		const handleWindowResize = () => {
 			setWindowSize([window.innerWidth])
 		}
-		window.addEventListener('resize', handleWindowResize)
-		return () => {
-			window.removeEventListener('resize', handleWindowResize)
+		if (typeof window !== 'undefined') {
+			window.addEventListener('resize', handleWindowResize)
+			return () => {
+				if (typeof window !== 'undefined') {
+					window.removeEventListener('resize', handleWindowResize)
+				}
+			}
 		}
 	}, [])
 
-	useEffect(() => {
-		const handleDocumentClientResize = () => {
-			setDocumentWidth([document.documentElement.clientWidth])
-		}
-		window.addEventListener('resize', handleDocumentClientResize)
-		return () => {
-			window.removeEventListener('resize', handleDocumentClientResize)
-		}
-	}, [])
+	// useEffect(() => {
+	// 	const handleDocumentClientResize = () => {
+	// 		setDocumentWidth([document.documentElement.clientWidth])
+	// 	}
+	// 	if (typeof window !== 'undefined') {
+	// 		window.addEventListener('resize', handleDocumentClientResize)
+	// 	}
+
+	// 	return () => {
+	// 		if (typeof window !== 'undefined') {
+	// 			window.removeEventListener('resize', handleDocumentClientResize)
+	// 		}
+	// 	}
+	// }, [])
 
 	useEffect(() => {
 		const body = document.querySelector('body')
@@ -104,8 +132,8 @@ export default function Header() {
 	})
 
 	let viewportWidth = windowSize[0]
-	let documentViewWidth = documentWidth[0]
-	let scrollBarWidth = viewportWidth - documentViewWidth
+	// let documentViewWidth = documentWidth[0]
+	// let scrollBarWidth = viewportWidth - documentViewWidth
 	let resDesktop = (viewportWidth - headerWidth) / 2
 
 	return (
