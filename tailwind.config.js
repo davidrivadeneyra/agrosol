@@ -129,6 +129,10 @@ module.exports = {
 				'1.75rem',
 				{ lineHeight: '120%', fontWeight: '800' },
 			],
+			headingWebBigSemibold: [
+				'1.75rem',
+				{ lineHeight: '120%', fontWeight: '600' },
+			],
 			headingWebBase: [
 				'1.188rem',
 				{ lineHeight: '120%', fontWeight: '800' },
@@ -144,6 +148,10 @@ module.exports = {
 			headingMobileBig: [
 				'1.313rem',
 				{ lineHeight: '120%', fontWeight: '800' },
+			],
+			headingMobileBigSemibold: [
+				'1.313rem',
+				{ lineHeight: '120%', fontWeight: '600' },
 			],
 			headingMobileBase: [
 				'1.063rem',

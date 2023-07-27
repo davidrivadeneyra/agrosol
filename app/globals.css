@@ -39,15 +39,15 @@
 		font-style: normal;
 	}
 
-	:root {
+	:root[data-theme='dark'] {
 		--white: 0deg, 0%, 100%;
 
 		--gray-100: 222deg, 25%, 10%;
 		--gray-200: 222deg, 25%, 13%;
-		--gray-600: 222deg, 8%, 61%;
+		--gray-600: 222deg, 14%, 52%;
 		--gray-700: 222deg, 10%, 70%;
 		--gray-800: 222deg, 12%, 82%;
-		--gray-900: 222deg, 2%, 92%;
+		--gray-900: 222deg, 2%, 94%;
 
 		--blue-200: 222deg, 24%, 19%;
 		--blue-300: 222deg, 40%, 20%;
@@ -68,14 +68,14 @@
 		--green-900: 150deg, 80%, 98%;
 
 		--purple-200: 254deg, 14%, 18%;
-		--purple-300: 254deg, 38%, 23%;
+		--purple-300: 254deg, 38%, 19%;
 		--purple-500: 251deg, 99%, 78%;
 		--purple-700: 251deg, 11%, 60%;
 		--purple-800: 250deg, 29%, 84%;
 		--purple-900: 248deg, 80%, 98%;
 
-		--red-200: 346deg, 15%, 17%;
-		--red-300: 345deg, 38%, 31%;
+		--red-200: 346deg, 15%, 13%;
+		--red-300: 345deg, 38%, 16%;
 		--red-500: 346deg, 86%, 66%;
 		--red-700: 345deg, 9%, 58%;
 		--red-800: 344deg, 24%, 82%;
@@ -89,59 +89,87 @@
 		--yellow-900: 38deg, 80%, 98%;
 	}
 
+	:root[data-theme='light'] {
+		--white: 0deg, 0%, 100%;
+
+		--gray-100: 220deg, 60%, 99%;
+		--gray-200: 220deg, 73%, 97%;
+		--gray-600: 221deg, 11%, 51%;
+		--gray-700: 223deg, 14%, 39%;
+		--gray-800: 222deg, 19%, 31%;
+		--gray-900: 221deg, 24%, 24%;
+
+		--blue-200: 212deg, 90%, 96%;
+		--blue-300: 213deg, 100%, 94%;
+		--blue-500: 215deg, 94%, 50%;
+		--blue-700: 215deg, 33%, 44%;
+		--blue-800: 215deg, 35%, 31%;
+		--blue-900: 215deg, 54%, 24%;
+
+		--orange-200: 25deg, 90%, 96%;
+		--orange-300: 25deg, 95%, 92%;
+		--orange-500: 25deg, 79%, 43%;
+
+		--green-200: 138deg, 62%, 96%;
+		--green-300: 147deg, 50%, 93%;
+		--green-500: 148deg, 68%, 37%;
+		--green-700: 148deg, 19%, 44%;
+		--green-800: 148deg, 15%, 31%;
+		--green-900: 149deg, 24%, 24%;
+
+		--purple-200: 250deg, 67%, 96%;
+		--purple-300: 250deg, 94%, 96%;
+		--purple-500: 250deg, 95%, 64%;
+		--purple-700: 250deg, 18%, 55%;
+		--purple-800: 251deg, 20%, 40%;
+		--purple-900: 251deg, 24%, 33%;
+
+		--red-200: 348deg, 56%, 96%;
+		--red-300: 346deg, 94%, 94%;
+		--red-500: 345deg, 60%, 53%;
+		--red-700: 345deg, 16%, 52%;
+		--red-800: 344deg, 20%, 37%;
+		--red-900: 345deg, 24%, 30%;
+
+		--yellow-200: 24deg, 71%, 96%;
+		--yellow-300: 41deg, 94%, 93%;
+		--yellow-500: 41deg, 90%, 32%;
+		--yellow-700: 41deg, 16%, 46%;
+		--yellow-800: 40deg, 15%, 31%;
+		--yellow-900: 41deg, 24%, 24%;
+	}
+
 	@media (prefers-color-scheme: light) {
-		:root {
-			--white: 0deg, 0%, 100%;
-
-			--gray-100: 220deg, 60%, 99%;
-			--gray-200: 220deg, 73%, 97%;
-			--gray-600: 221deg, 11%, 51%;
-			--gray-700: 223deg, 14%, 39%;
-			--gray-800: 222deg, 19%, 31%;
-			--gray-900: 221deg, 24%, 24%;
-
-			--blue-200: 212deg, 90%, 96%;
-			--blue-300: 213deg, 100%, 94%;
-			--blue-500: 215deg, 94%, 50%;
-			--blue-700: 215deg, 33%, 44%;
-			--blue-800: 215deg, 35%, 31%;
-			--blue-900: 215deg, 54%, 24%;
-
-			--orange-200: 25deg, 90%, 96%;
-			--orange-300: 25deg, 95%, 92%;
-			--orange-500: 25deg, 79%, 43%;
-
-			--green-200: 138deg, 62%, 96%;
-			--green-300: 147deg, 50%, 93%;
-			--green-500: 148deg, 68%, 37%;
-			--green-700: 148deg, 19%, 44%;
-			--green-800: 148deg, 15%, 31%;
-			--green-900: 149deg, 24%, 24%;
-
-			--purple-200: 250deg, 67%, 96%;
-			--purple-300: 250deg, 94%, 96%;
-			--purple-500: 250deg, 95%, 64%;
-			--purple-700: 250deg, 18%, 55%;
-			--purple-800: 251deg, 20%, 40%;
-			--purple-900: 251deg, 24%, 33%;
-
-			--red-200: 348deg, 56%, 96%;
-			--red-300: 346deg, 94%, 94%;
-			--red-500: 345deg, 60%, 53%;
-			--red-700: 345deg, 16%, 52%;
-			--red-800: 344deg, 20%, 37%;
-			--red-900: 345deg, 24%, 30%;
-
-			--yellow-200: 24deg, 71%, 96%;
-			--yellow-300: 41deg, 94%, 93%;
-			--yellow-500: 41deg, 90%, 32%;
-			--yellow-700: 41deg, 16%, 46%;
-			--yellow-800: 40deg, 15%, 31%;
-			--yellow-900: 41deg, 24%, 24%;
-		}
 	}
 
 	@media (prefers-color-scheme: lime) {
+	}
+
+	/* Scroll thumb styles */
+	.scrollbar::-webkit-scrollbar {
+		@apply w-0;
+	}
+	.scrollbar::-webkit-scrollbar-thumb {
+		@apply bg-gray-200 rounded-full;
+	}
+	.scrollbar::-webkit-scrollbar-thumb:active {
+		@apply bg-red-700;
+	}
+	.scrollbar::-webkit-scrollbar-thumb:hover {
+		@apply bg-blue-500;
+	}
+
+	/* Scroll track styles (Background) */
+	.scrollbar::-webkit-scrollbar-track {
+		@apply bg-gray-900/[.11];
+	}
+	.scrollbar::-webkit-scrollbar-track:hover,
+	.scrollbar::-webkit-scrollbar-track:active {
+		@apply bg-gray-900/[.13];
+	}
+
+	.h100vh {
+		height: 100vh;
 	}
 }
 
@@ -151,7 +179,9 @@
 	i,
 	a,
 	ul,
-	li {
+	li,
+	button,
+	span {
 		@apply font-ui text-gray-700;
 	}
 
@@ -165,7 +195,11 @@
 	}
 
 	body {
-		@apply selection:bg-red-200 selection:text-red-500;
+		@apply scrollbar selection:bg-red-200 selection:text-red-500;
+	}
+
+	.main {
+		@apply bg-gray-100 w-full desktop:max-w-5xl mx-auto;
 	}
 
 	.container {
@@ -180,9 +214,7 @@
 	.section-block-inside {
 		@apply flex flex-col gap-14;
 	}
-	.header-responsive {
-		@apply responsive-sections;
-	}
+
 	.hero {
 		@apply tablet:border-2 tablet:p-16 tablet:rounded-[2rem] -mx-structureMargin px-structurePadding py-10 col-start-1 col-span-4 tablet:col-start-2 tablet:col-span-6 desktop:col-start-3 desktop:col-span-8 tablet:-mx-16 mb-32;
 	}
@@ -211,6 +243,9 @@
 	}
 	.heading-big {
 		@apply mb-6 text-headingMobileBig tablet:text-headingWebBig;
+	}
+	.heading-big-semibold {
+		@apply text-headingMobileBigSemibold tablet:text-headingWebBigSemibold;
 	}
 	.heading-base {
 		@apply mb-6 text-headingMobileBase tablet:text-headingWebBase;
@@ -294,6 +329,9 @@
 	}
 	.divider-orange {
 		@apply stroke-orange-500 h-3 tablet:h-4;
+	}
+	.divider-gray {
+		@apply stroke-gray-600 h-3 tablet:h-4;
 	}
 
 	.hero-gray {
