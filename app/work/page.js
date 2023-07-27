@@ -1,41 +1,22 @@
-import Logo from './components/logo'
-import Divider from './components/divider'
-import Header from './components/header'
-import Footer from './components/footer'
+import Logo from '../components/logo'
+import Divider from '../components/divider'
 import Link from 'next/link'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
-export default function Home() {
+export default function Work() {
 	return (
 		<>
 			<Header></Header>
 			<div className='container'>
-				<main className='hero-blue'>
-					<p className='p-large text-blue-700'>
-						Mi nombre es David🖖, soy{' '}
-						<span className='b-large text-blue-800'>
-							Product Designer
-						</span>{' '}
-						y{' '}
-						<Link
-							href='https://ed.team/cursos/figma-componentes'
-							target='_blank'
-							className='link-large text-blue-800 hover:text-purple-500'>
-							profesor
-						</Link>
-						. Por más de 4 años he estado creando productos que
-						conecten con los usuarios y ayuden a las empresas a
-						alcanzar sus objetivos🎯. Me encanta la colaboración en
-						equipo, las interfaces hermosas✨ y las buenas
-						prácticas. *
-					</p>
-				</main>
-
-				<section className='section-block mb-0 pb-16 desktop:pb-12'>
-					<h2 className='heading-base text-yellow-500 desktop:mb-0'>
-						Proyectos destacados 📌
-					</h2>
+				<section className='section-block mb-0'>
+					<span className='relative'>
+						<span className='block absolute -inset-0 bg-purple-300 scale-y-[150%] translate-y-[30%]'></span>
+						<h1 className='relative heading-bigger text-gray-900 mb-16 inline-block '>
+							Mi trabajo
+						</h1>
+					</span>
 				</section>
-
 				<section className='section-block'>
 					<Link
 						href='/plan-empresas'
@@ -110,7 +91,7 @@ export default function Home() {
 					</div>
 				</section>
 			</div>
-			<Divider className='divider-red'></Divider>
+			<Divider className='divider-purple'></Divider>
 			<Footer></Footer>
 		</>
 	)
