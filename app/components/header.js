@@ -129,7 +129,7 @@ export default function Header() {
 			</header>
 			<ul
 				className={`fixed w-full h-full mx-auto left-0 z-10 text-gray-900 bg-gray-100  ${
-					isOpen ? 'top-0' : 'top-[-100vh]'
+					isOpen ? 'top-0 block' : 'top-[-100vh] hidden'
 				} `}>
 				<div className='w-full h-full desktop:max-w-5xl mx-auto pt-40 desktop:pt-52 pb-20 desktop:pb-32 transition ease-in duration-200'>
 					<div className='container h-full'>

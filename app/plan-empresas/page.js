@@ -573,7 +573,22 @@ export default function PlanEmpresas() {
 						</div>
 					</div>
 				</section>
-				<section className='col-span-full mb-12'>
+				<section className='mb-12 col-span-full'>
+					<Link
+						target='_blanck'
+						href='https://www.loom.com/share/aaa4681e44ab4a5391cfb130c97cb670?sid=c42b03af-579f-4722-a474-8f7c180262b3'>
+						<img
+							src='./assets/img/pg/video-pg-tiny.png'
+							alt=''
+							className='rounded drop-shadow-md'
+						/>
+					</Link>
+
+					<p className='i-base text-center text-gray-600'>
+						Video presentación del prototipo final 🎬
+					</p>
+				</section>
+				{/* <section className='col-span-full mb-12'>
 					<div className='relative pb-[56.25%] h-0'>
 						<iframe
 							src='https://www.loom.com/embed/aaa4681e44ab4a5391cfb130c97cb670?sid=68773a9e-7315-4651-b64a-28f642837c5a'
@@ -584,7 +599,7 @@ export default function PlanEmpresas() {
 					<p className='i-base text-center text-gray-600'>
 						Video presentación del prototipo final 🎬
 					</p>
-				</section>
+				</section> */}
 				<section className='mb-12 col-span-full'>
 					<img
 						src='./assets/img/pg/ed-pg-handoff.png'
