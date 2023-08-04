@@ -54,7 +54,7 @@ export default function Home() {
 							</p>
 							<span className='before:block before:absolute before:-inset-0 tablet:group-hover:before:bg-blue-300 relative inline-block transition ease-in-out duration-300'>
 								<button className='relative link-button-base link-color-blue group-active:text-blue-500/70'>
-									Ve al caso estudio
+									Ir al caso estudio
 								</button>
 							</span>
 						</div>
@@ -77,7 +77,7 @@ export default function Home() {
 							</p>
 							<span className='before:block before:absolute before:-inset-0 tablet:group-hover:before:bg-purple-300 relative inline-block transition ease-in-out duration-300'>
 								<button className='relative link-button-base link-color-purple group-active:text-purple-500/70'>
-									Pronto disponible
+									Ir al caso estudio
 								</button>
 							</span>
 						</div>

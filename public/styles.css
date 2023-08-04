@@ -1559,6 +1559,10 @@ body::selection {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1641,6 +1645,11 @@ body::selection {
   border-width: 2px;
 }
 
+.border-y-\[1px\] {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -1652,6 +1661,15 @@ body::selection {
 
 .border-gray-800\/\[5\%\] {
   border-color: hsl(var(--gray-800), 5%);
+}
+
+.border-gray-900 {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--gray-900), var(--tw-border-opacity));
+}
+
+.border-gray-900\/\[8\%\] {
+  border-color: hsl(var(--gray-900), 8%);
 }
 
 .bg-gray-100 {
@@ -1738,6 +1756,11 @@ body::selection {
   padding-bottom: 2rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1784,6 +1807,10 @@ body::selection {
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-center {

@@ -11,23 +11,29 @@ export default function PlanEmpresas() {
 			<HeaderMini></HeaderMini>
 			<div className='container'>
 				<main className='section-block mb-32'>
-					<h4 className='p-base text-red-500 pb-6'>✍ Resumen</h4>
-					<h1 className='heading-bigger pb-6'>Plan empresas</h1>
-					<p className='p-base'>
-						EDteam es una empresa líder de educación en línea en
-						Latinoamérica. A través de la educación, ayuda a cientos
-						de personas a obtener su primer empleo en tecnología.
-						Fui Product Designer durante más de un año. Aunque mi
-						objetivo principal fue ayudar a la empresa a crear
-						soluciones amigables para los consumidores (B2C),
-						también
-						<span className='b-base text-blue-800'>
-							{' '}
-							ayudé a crear un impacto de cara a clientes
-							empresariales (B2B).
-						</span>{' '}
-						Bajo esa premisa nace el producto Plan Empresas * 🌎🚀.
-					</p>
+					<h1 className='heading-bigger pb-12'>Plan empresas</h1>
+					<div className='py-12 border-y-[1px] border-gray-900/[8%]'>
+						<h4 className='p-base text-purple-500 pb-6'>
+							✍ Resumen
+						</h4>
+
+						<p className='p-base'>
+							EDteam es una empresa líder de educación en línea en
+							Latinoamérica. A través de la educación, ayuda a
+							cientos de personas a obtener su primer empleo en
+							tecnología. Fui Product Designer durante más de un
+							año. Aunque mi objetivo principal fue ayudar a la
+							empresa a crear soluciones amigables para los
+							consumidores (B2C), también
+							<span className='b-base text-blue-800'>
+								{' '}
+								ayudé a crear un impacto de cara a clientes
+								empresariales (B2B).
+							</span>{' '}
+							Bajo esa premisa nace el producto Plan Empresas *
+							🌎🚀.
+						</p>
+					</div>
 				</main>
 
 				{/* <section className='section-block'>
