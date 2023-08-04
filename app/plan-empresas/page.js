@@ -706,7 +706,33 @@ export default function PlanEmpresas() {
 						</div>
 					</div>
 				</section>
+				<Divider className='divider-red mb-0'></Divider>
+				<section className='section-block'>
+					<div className='block-inside'>
+						<Link href='/carrito' className='section-block-inside'>
+							<div className='p-8 transition ease-in-out duration-300 group rounded-[2rem] border-2 border-gray-100 bg-gray-900/[1.5%] border-gray-900/[5%] cursor-pointer flex flex-row gap-8 items-center'>
+								<img
+									src='./assets/img/ed-carrito-timy.png'
+									alt=''
+									className='h-32 w-32'
+								/>
+								<div className='flex flex-col gap-3'>
+									<h3 className='heading-big mb-0'>
+										Mejoras en la experiencia de regalo
+									</h3>
+
+									<span className='before:inline before:absolute before:-inset-0 tablet:group-hover:before:bg-blue-300 relative inline transition ease-in-out duration-300'>
+										<button className='inline relative link-button-base link-color-blue group-active:text-blue-500/70'>
+											Ir al caso estudio
+										</button>
+									</span>
+								</div>
+							</div>
+						</Link>
+					</div>
+				</section>
 			</div>
+
 			<Divider className='divider-gray'></Divider>
 			<Footer></Footer>
 		</>

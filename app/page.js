@@ -71,9 +71,8 @@ export default function Home() {
 								Una mejor experiencia, para ganar más clientes
 							</h3>
 							<p className='p-base mb-4'>
-								Mejoré el flujo de cierre de venta y así
-								disminuir la cantidad de los carritos
-								abandonados.
+								Mejoramos la experiencia de envío de regalos
+								digitales.
 							</p>
 							<span className='before:block before:absolute before:-inset-0 tablet:group-hover:before:bg-purple-300 relative inline-block transition ease-in-out duration-300'>
 								<button className='relative link-button-base link-color-purple group-active:text-purple-500/70'>
