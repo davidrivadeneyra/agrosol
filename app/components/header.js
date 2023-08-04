@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Link from 'next/link'
 import Logo from './logo'
+import { ReactDOM } from 'react'
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false)
@@ -36,6 +37,13 @@ export default function Header() {
 
 	let windowInnerWidth
 	let documentDocumentElementClientWidth
+	let currentPath
+
+	if (typeof window !== 'undefined') {
+		currentPath = window.location.pathname
+	}
+
+	console.log(currentPath)
 
 	if (typeof window !== 'undefined') {
 		windowInnerWidth = window.innerWidth
@@ -50,7 +58,7 @@ export default function Header() {
 	const [documentWidth, setDocumentWidth] = useState([
 		documentDocumentElementClientWidth,
 	])
-	console.log(documentDocumentElementClientWidth)
+	// console.log(documentDocumentElementClientWidth)
 
 	const headerRef = useRef(null)
 
@@ -111,7 +119,6 @@ export default function Header() {
 
 	useEffect(() => {
 		const body = document.querySelector('body')
-		const clientWidthBeforeMenu = document.documentElement.clientWidth
 
 		if (body) {
 			body.style.overflow = isOpen ? 'hidden' : 'auto'
@@ -148,9 +155,9 @@ export default function Header() {
 					<div
 						className={`fixed z-20 top:16 desktop:top-24 `}
 						onClick={() => setIsOpen(!isOpen)}
-						style={{ right: `${resDesktop}` + 'px' }}>
+						style={{ right: `${resDesktop}px` }}>
 						<div className='heading-bigger text-gray-900 cursor-pointer'>
-							{isOpen ? '😸' : '😺'}
+							{isOpen ? '🐵' : '🙊'}
 						</div>
 					</div>
 				</div>

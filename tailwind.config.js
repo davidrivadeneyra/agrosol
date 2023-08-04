@@ -13,7 +13,7 @@ module.exports = {
 			desktop: '1248px',
 		},
 		colors: {
-			white: {
+			base: {
 				white: 'hsl(var(--white), <alpha-value>)',
 			},
 			gray: {

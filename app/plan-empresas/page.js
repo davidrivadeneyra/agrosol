@@ -2,33 +2,18 @@ import Logo from '../components/logo'
 import Divider from '../components/divider'
 import Link from 'next/link'
 import Header from '../components/header'
+import HeaderMini from '../components/header-mini'
 import Footer from '../components/footer'
 
 export default function PlanEmpresas() {
 	return (
 		<>
-			<Header></Header>
+			<HeaderMini></HeaderMini>
 			<div className='container'>
-				<section className='section-block mb-0'>
-					<span className='relative'>
-						<span className='block absolute -inset-0 bg-purple-300 scale-y-[150%] translate-y-[30%]'></span>
-						<h1 className='relative heading-bigger text-gray-900 mb-16 inline-block '>
-							Plan empresas
-						</h1>
-					</span>
-				</section>
-				{/* <section className='section-block mb-16'>
-				<span className='relative'>
-					<span className='before:block before:absolute before:-inset-0 before:bg-red-500 relative inline-block bottom-0 h-[1/2]'>
-						<h1 className='relative heading-bigger text-gray-900  inline-block'>
-							Plan empresas
-						</h1>
-					</span>
-				</span>
-			</section> */}
-				<main className='hero-blue mb-3'>
-					<h4 className='heading-base text-red-500'>✍ Resumen</h4>
-					<p className='p-base text-blue-700'>
+				<main className='section-block mb-32'>
+					<h4 className='p-base text-red-500 pb-6'>✍ Resumen</h4>
+					<h1 className='heading-bigger pb-6'>Plan empresas</h1>
+					<p className='p-base'>
 						EDteam es una empresa líder de educación en línea en
 						Latinoamérica. A través de la educación, ayuda a cientos
 						de personas a obtener su primer empleo en tecnología.
@@ -44,7 +29,8 @@ export default function PlanEmpresas() {
 						Bajo esa premisa nace el producto Plan Empresas * 🌎🚀.
 					</p>
 				</main>
-				<section className='section-block'>
+
+				{/* <section className='section-block'>
 					<p className='i-base text-gray-600'>
 						* Para cumplir con mi acuerdo de confidencialidad, he
 						omitido y ofuscado información confidencial en este
@@ -52,7 +38,7 @@ export default function PlanEmpresas() {
 						caso es mía y no necesariamente refleja los puntos de
 						vista de EDteam.
 					</p>
-				</section>
+				</section> */}
 				<Divider className='divider-red'></Divider>
 				<section className='section-block mb-0 pb-12'>
 					<div className='section-block-inside'>
@@ -573,14 +559,14 @@ export default function PlanEmpresas() {
 						</div>
 					</div>
 				</section>
-				<section className='mb-12 col-span-full'>
+				<section className='section-block'>
 					<Link
 						target='_blanck'
 						href='https://www.loom.com/share/aaa4681e44ab4a5391cfb130c97cb670?sid=c42b03af-579f-4722-a474-8f7c180262b3'>
 						<img
 							src='./assets/img/pg/video-pg-tiny.png'
 							alt=''
-							className='rounded drop-shadow-md'
+							className='ease-in-out hover:ease-out duration-500 rounded drop-shadow-md hover:duration-500 hover:-translate-y-4 hover:scale-105 active:duration-500 active:-translate-y-4 active:scale-105'
 						/>
 					</Link>
 
