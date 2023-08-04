@@ -716,8 +716,8 @@ export default function PlanEmpresas() {
 									alt=''
 									className='h-32 w-32'
 								/>
-								<div className='flex flex-col gap-3'>
-									<h3 className='heading-big mb-0'>
+								<div className=''>
+									<h3 className='heading-big pb-3 mb-0'>
 										Mejoras en la experiencia de regalo
 									</h3>
 

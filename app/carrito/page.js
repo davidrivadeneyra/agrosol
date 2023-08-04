@@ -382,7 +382,7 @@ export default function Carrito() {
 						</div>
 					</div>
 				</section>
-				<section className='col-span-full'>
+				<section className='col-span-full mb-32'>
 					<img
 						src='./assets/img/car/car-hs-final.webp'
 						alt=''
@@ -426,14 +426,14 @@ export default function Carrito() {
 					<div className='section-block-inside'>
 						<Link
 							href='/plan-empresas'
-							className='p-8 transition ease-in-out duration-300 group rounded-[2rem] border-2 border-gray-100 bg-gray-900/[1.5%] border-gray-900/[5%] cursor-pointer flex flex-row gap-8 items-center'>
+							className='p-8 transition ease-in-out duration-300 group rounded-[2rem] border-2 border-gray-100 bg-gray-900/[1.5%] border-gray-900/[5%] cursor-pointer flex flex-row gap-8 grow-0 items-center'>
 							<img
 								src='./assets/img/pg.png'
 								alt=''
 								className='h-32 w-32'
 							/>
-							<div className='flex flex-col gap-3'>
-								<h3 className='heading-big mb-0'>
+							<div className=''>
+								<h3 className='heading-big mb-0 pb-3'>
 									Plan empresas
 								</h3>
 
@@ -446,8 +446,8 @@ export default function Carrito() {
 						</Link>
 					</div>
 				</section>
-				<Divider className='divider-red mb-0'></Divider>
 			</div>
+			<Divider className='divider-gray pb-0 mb-0'></Divider>
 			<Footer></Footer>
 		</>
 	)

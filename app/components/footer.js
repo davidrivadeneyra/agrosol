@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Footer() {
 	return (
 		<>
-			<footer className='container '>
+			<footer className='container-footer'>
 				<div className='responsive-sections pb-40'>
 					<div className='flex flex-col gap-24'>
 						<Link href='/'>
