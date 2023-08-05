@@ -311,6 +311,8 @@ export default function Carrito() {
 								que las mejoras debían pasar a producción lo más
 								pronto posible, y luego testear con los usuarios
 								en las semanas posteriores.{' '}
+							</p>
+							<p className='p-base pb-3'>
 								<span className='b-base'>
 									Estoy de acuerdo con que no fue la mejor
 									decisión 🤔
@@ -319,6 +321,20 @@ export default function Carrito() {
 								hacer un testing, sin embargo nos adaptamos a
 								las circunstancias, ya que podríamos obtener
 								feedback con el área de ventas posteriormente.
+							</p>
+							<p className='p-base'>
+								Por otra parte, trabajé en el{' '}
+								<span className='before:absolute before:-inset-0 hover:before:bg-blue-300 relative inline-block transition ease-in-out duration-300'>
+									<a
+										className='relative link-button-base link-color-blue active:text-blue-500/70'
+										target='_blanck'
+										href='https://ed.team/regalar'>
+										diseño de la landing page
+									</a>
+								</span>
+								, esta explica el proceso de regalar, se vio
+								necesario para apoyar al equipo de marketing y
+								ventas.
 							</p>
 						</div>
 					</div>

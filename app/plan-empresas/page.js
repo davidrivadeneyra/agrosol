@@ -474,7 +474,7 @@ export default function PlanEmpresas() {
 				</section>
 				<section className='mb-32 col-span-full'>
 					<img
-						src='./assets/img/pg/pg-m-02.jpg'
+						src='./assets/img/pg/pg-maze-test.webp'
 						alt=''
 						className='rounded'
 					/>
@@ -559,6 +559,22 @@ export default function PlanEmpresas() {
 										lugar del logo de EDteam, así se
 										sentirían mejor identificados con su
 										interfaz.
+									</span>
+								</li>
+								<li className='flex'>
+									<span className='p-base pr-4'>⛳</span>
+									<span>
+										Además de todo lo anterior, creamos una
+										landing page, la cual ayudaría al equipo
+										de ventas a vender el producto,{' '}
+										<span className='before:absolute before:-inset-0 hover:before:bg-blue-300 relative inline-block transition ease-in-out duration-300'>
+											<a
+												className='relative link-button-base link-color-blue active:text-blue-500/70'
+												target='_blanck'
+												href='https://ed.team/empresas'>
+												pueden ver la página aquí.
+											</a>{' '}
+										</span>
 									</span>
 								</li>
 							</ul>

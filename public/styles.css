@@ -2047,6 +2047,12 @@ body::selection {
   background-color: hsl(var(--red-300), var(--tw-bg-opacity));
 }
 
+.hover\:before\:bg-purple-300:hover::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--purple-300), var(--tw-bg-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2108,6 +2114,10 @@ body::selection {
 
 .active\:text-red-500\/70:active {
   color: hsl(var(--red-500), 0.7);
+}
+
+.active\:text-purple-500\/70:active {
+  color: hsl(var(--purple-500), 0.7);
 }
 
 .active\:duration-500:active {
