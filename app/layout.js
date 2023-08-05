@@ -1,4 +1,5 @@
 import '/public/styles.css'
+import Script from 'next/script'
 
 export const metadata = {
 	title: 'David Rivadeneyra | Portafolio',
@@ -8,8 +9,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang='en'>
-			<body className='main'>{children}</body>
-		</html>
+		<>
+			<html lang='en'>
+				{/* <!-- Google tag (gtag.js) --> */}
+				<Script
+					async
+					src='https://www.googletagmanager.com/gtag/js?id=G-NR50LTLNF9'></Script>
+				<Script>
+					{`window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'G-NR50LTLNF9');
+					`}
+				</Script>
+
+				<body className='main'>{children}</body>
+			</html>
+		</>
 	)
 }
