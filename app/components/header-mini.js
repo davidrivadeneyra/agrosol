@@ -29,13 +29,13 @@ export default function HeaderMini() {
 							</Link>
 
 							<a
-								href='mailto:test@email.com'
+								href='mailto:david.rivadeneyra.c@gmail.com'
 								className='transition ease-in-out group duration-300 border-2 border-gray-800/[5%] tablet:hidden bg-gray-200 h-16 w-16 flex justify-center items-center rounded-[1.25em] hover:bg-blue-500 hover:border-2 hover:border-blue-500 active:bg-blue-500/90 active:border-2 active:border-blue-500'>
 								<Send className='h-7 fill-gray-900 group-hover:fill-base-white group-active:fill-base-white'></Send>
 							</a>
 
 							<a
-								href='mailto:test@email.com'
+								href='mailto:david.rivadeneyra.c@gmail.com'
 								className='hidden tablet:block'>
 								<button className='transition ease-in-out duration-300 bg-gray-200 border-2 border-gray-800/[5%] b-base text-gray-900 hover:text-base-white active:text-base-white py-3 px-4 rounded-[1.25em] flex items-center gap-2 hover:bg-blue-500 hover:border-2 hover:border-blue-500 active:bg-blue-500/90 active:border-2 active:border-blue-500'>
 									<Send className='h-5 fill-gray-900 hover:fill-base-white active:fill-base-white'></Send>
