@@ -20,12 +20,22 @@ export default function HeaderMini() {
 				<div className='tablet:max-w-3xl desktop:max-w-5xl mx-auto'>
 					<div className='container-header'>
 						<div className='responsive-sections flex justify-between items-center'>
-							<Link href='/'>
+							<Link
+								href='/'
+								className='flex flex-row items-center gap-2'>
 								<img
 									src='/assets/img/avatar-davidrivadeneyra.png'
 									alt='Avatar de David Rivadeneyra'
 									className='h-16 desktop:h-24 transition hover:scale-105 ease-in-out duration-700 '
 								/>
+								{/* <span className='space-y-1'>
+									<h1 className='heading-base mb-0'>
+										David Rivadeneyra
+									</h1>
+									<h2 className='p-base text-gray-700 leading-[120%]'>
+										Product Designer
+									</h2>
+								</span> */}
 							</Link>
 
 							<a
