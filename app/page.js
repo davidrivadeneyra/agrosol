@@ -29,7 +29,7 @@ export default function Home() {
 				</main>
 				<Divider className='divider-red'></Divider>
 
-				<section className='section-block mb-0 pb-16 desktop:pb-12'>
+				{/* <section className='section-block mb-0 pb-16 desktop:pb-12'>
 					<h2 className='heading-big text-gray-900 desktop:mb-0'>
 						📌 Proyectos destacados
 					</h2>
@@ -106,7 +106,7 @@ export default function Home() {
 						</div>
 						<img src='/assets/img/recursosdev-tiny.png' alt='' />
 					</div>
-				</section>
+				</section> */}
 			</div>
 			<Divider className='divider-red'></Divider>
 			<Footer></Footer>
