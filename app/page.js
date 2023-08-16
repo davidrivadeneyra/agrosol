@@ -27,8 +27,6 @@ export default function Home() {
 						lo que he aprendido.
 					</p>
 				</main>
-{/
-*
 				<Divider className='divider-red'></Divider>
 
 				<section className='section-block mb-0 pb-16 desktop:pb-12'>
@@ -109,8 +107,7 @@ export default function Home() {
 						<img src='/assets/img/recursosdev-tiny.png' alt='' />
 					</div>
 				</section>
-			</div> *
-/} 
+			</div>
 			<Divider className='divider-red'></Divider>
 			<Footer></Footer>
 		</>
