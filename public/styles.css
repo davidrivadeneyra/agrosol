@@ -495,7 +495,7 @@ video {
   --gray-900: 222deg, 2%, 94%;
   --blue-200: 222deg, 24%, 19%;
   --blue-300: 222deg, 40%, 20%;
-  --blue-500: 215deg, 95%, 57%;
+  --blue-500: 215deg, 95%, 65%;
   --blue-700: 216deg, 25%, 70%;
   --blue-800: 215deg, 67%, 94%;
   --blue-900: 215deg, 90%, 98%;
@@ -1313,6 +1313,10 @@ body::selection {
   .container {
     max-width: 1248px;
   }
+}
+
+.static {
+  position: static;
 }
 
 .fixed {

@@ -10,26 +10,23 @@ export default function Home() {
 			<HeaderMini></HeaderMini>
 			<div className='container'>
 				<main className='section-block mb-32'>
-					<p className='p-base text-gray-700 pb-6'>
-						David Rivadeneyra -{' '}
-						<span className='b-base text-gray-700'>
-							Product Designer
-						</span>
-					</p>
-					<h1 className='heading-bigger pb-6'>
-						Por más de 4 años he diseñado productos que conecten con
-						los usuarios e impulsen startups a lograr sus objetivos
-						🎯
-					</h1>
+					<h1 className='heading-bigger pb-6'>Product Designer</h1>
 					<p className='p-large'>
-						¡Hola🖖! Me encanta la colaboración en equipo, las
-						interfaces hermosas 🌈, las buenas prácticas y enseñar
-						lo que he aprendido.
+						<span className='b-large'>Tengo 4 años</span> trabajando
+						como{' '}
+						<span className='b-large'>
+							diseñador de experiencia de usuario y haciendo
+							diseño experimental
+						</span>{' '}
+						para startups y empresas de Bolivia, Colombia, Uruguay,
+						EEUU y Perú, las he ayudándo a lograr de sus objetivos.
+						Me encanta la colaboración en equipo, las interfaces
+						hermosas 🌈, y las buenas prácticas.
 					</p>
 				</main>
 				<Divider className='divider-red'></Divider>
 
-				{/* <section className='section-block mb-0 pb-16 desktop:pb-12'>
+				<section className='section-block mb-0 pb-16 desktop:pb-12'>
 					<h2 className='heading-big text-gray-900 desktop:mb-0'>
 						📌 Proyectos destacados
 					</h2>
@@ -61,7 +58,7 @@ export default function Home() {
 						<img src='/assets/img/pg.png' alt='' />
 					</Link>
 					<Link
-						href='carrito'
+						href='/carrito'
 						className='transition ease-in-out duration-300 mb-24 tablet:mb-6 group flex flex-col-reverse gap-10 tablet:gap-12 tablet:grid tablet:grid-cols-2 tablet:items-center tablet:p-16 tablet:-mx-16 rounded-[2rem] tablet:border-2 tablet:border-gray-100 tablet:hover:bg-gray-900/[1.5%] tablet:hover:border-gray-900/[5%] '>
 						<div>
 							<h4 className='heading-small text-gray-600'>
@@ -106,7 +103,7 @@ export default function Home() {
 						</div>
 						<img src='/assets/img/recursosdev-tiny.png' alt='' />
 					</div>
-				</section> */}
+				</section>
 			</div>
 			<Divider className='divider-red'></Divider>
 			<Footer></Footer>
