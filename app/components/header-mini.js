@@ -24,9 +24,9 @@ export default function HeaderMini() {
 								href='/'
 								className='flex flex-row items-center gap-2'>
 								<img
-									src='/assets/img/avatar-davidrivadeneyra.png'
+									src='/assets/img/logo.svg'
 									alt='Avatar de David Rivadeneyra'
-									className='h-16 desktop:h-24 transition hover:scale-105 ease-in-out duration-700 '
+									className='h-16 desktop:h-12 transition hover:scale-105 ease-in-out duration-700 '
 								/>
 								{/* <span className='space-y-1'>
 									<h1 className='heading-base mb-0'>
