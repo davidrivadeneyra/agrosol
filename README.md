@@ -22,6 +22,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 -   npm run watch -> for updae in real time your changes in css
 -   For new classes work in global.css
+-   https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
 
 ## Learn More
 
