@@ -163,7 +163,7 @@ module.exports = {
 			],
 		},
 		fontFamily: {
-			ui: 'ui, sans-serif',
+			body: 'body, sans-serif',
 			heading: 'heading, sans-serif',
 		},
 		extend: {

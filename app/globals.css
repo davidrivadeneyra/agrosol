@@ -4,21 +4,21 @@
 
 @layer base {
 	@font-face {
-		font-family: 'ui';
+		font-family: 'body';
 		src: url('../public/fonts/dm-sans-bold.woff2') format('woff2');
 		font-weight: 700;
 		font-display: swap;
 		font-style: normal;
 	}
 	@font-face {
-		font-family: 'ui';
+		font-family: 'body';
 		src: url('../public/fonts/dm-sans-italic.woff2') format('woff2');
 		font-weight: 400;
 		font-display: swap;
 		font-style: italic;
 	}
 	@font-face {
-		font-family: 'ui';
+		font-family: 'body';
 		src: url('../public/fonts/dm-sans-regular.woff2') format('woff2');
 		font-weight: 400;
 		font-display: swap;
@@ -43,104 +43,10 @@
 	}
 
 	:root {
-		--white: 0deg, 0%, 100%;
-
-		--gray-100: 222deg, 25%, 10%;
-		--gray-200: 222deg, 25%, 13%;
-		--gray-600: 222deg, 14%, 52%;
-		--gray-700: 222deg, 10%, 70%;
-		--gray-800: 222deg, 12%, 82%;
-		--gray-900: 222deg, 2%, 94%;
-
-		--blue-200: 222deg, 24%, 19%;
-		--blue-300: 222deg, 40%, 20%;
-		--blue-500: 215deg, 95%, 65%;
-		--blue-700: 216deg, 25%, 70%;
-		--blue-800: 215deg, 67%, 94%;
-		--blue-900: 215deg, 90%, 98%;
-
-		--orange-200: 23deg, 15%, 17%;
-		--orange-300: 26deg, 37%, 25%;
-		--orange-500: 24deg, 93%, 65%;
-
-		--green-200: 148deg, 15%, 17%;
-		--green-300: 148deg, 37%, 15%;
-		--green-500: 148deg, 81%, 50%;
-		--green-700: 149deg, 12%, 56%;
-		--green-800: 148deg, 31%, 80%;
-		--green-900: 150deg, 80%, 98%;
-
-		--purple-200: 254deg, 14%, 18%;
-		--purple-300: 254deg, 38%, 19%;
-		--purple-500: 251deg, 99%, 78%;
-		--purple-700: 251deg, 11%, 60%;
-		--purple-800: 250deg, 29%, 84%;
-		--purple-900: 248deg, 80%, 98%;
-
-		--red-200: 346deg, 15%, 13%;
-		--red-300: 345deg, 38%, 16%;
-		--red-500: 346deg, 86%, 66%;
-		--red-700: 345deg, 9%, 58%;
-		--red-800: 344deg, 24%, 82%;
-		--red-900: 346deg, 87%, 97%;
-
-		--yellow-200: 42deg, 15%, 17%;
-		--yellow-300: 41deg, 37%, 25%;
-		--yellow-500: 41deg, 88%, 74%;
-		--yellow-700: 39deg, 9%, 58%;
-		--yellow-800: 41deg, 26%, 81%;
-		--yellow-900: 38deg, 80%, 98%;
 	}
 
 	@media (prefers-color-scheme: light) {
 		:root {
-			--white: 0deg, 0%, 100%;
-
-			--gray-100: 220deg, 60%, 99%;
-			--gray-200: 220deg, 73%, 97%;
-			--gray-600: 221deg, 11%, 51%;
-			--gray-700: 223deg, 14%, 39%;
-			--gray-800: 222deg, 19%, 31%;
-			--gray-900: 221deg, 24%, 24%;
-
-			--blue-200: 212deg, 90%, 96%;
-			--blue-300: 213deg, 100%, 94%;
-			--blue-500: 215deg, 94%, 50%;
-			--blue-700: 215deg, 33%, 44%;
-			--blue-800: 215deg, 35%, 31%;
-			--blue-900: 215deg, 54%, 24%;
-
-			--orange-200: 25deg, 90%, 96%;
-			--orange-300: 25deg, 95%, 92%;
-			--orange-500: 25deg, 79%, 43%;
-
-			--green-200: 138deg, 62%, 96%;
-			--green-300: 147deg, 50%, 93%;
-			--green-500: 148deg, 68%, 37%;
-			--green-700: 148deg, 19%, 44%;
-			--green-800: 148deg, 15%, 31%;
-			--green-900: 149deg, 24%, 24%;
-
-			--purple-200: 250deg, 67%, 96%;
-			--purple-300: 250deg, 94%, 96%;
-			--purple-500: 250deg, 95%, 64%;
-			--purple-700: 250deg, 18%, 55%;
-			--purple-800: 251deg, 20%, 40%;
-			--purple-900: 251deg, 24%, 33%;
-
-			--red-200: 348deg, 56%, 96%;
-			--red-300: 346deg, 94%, 94%;
-			--red-500: 345deg, 60%, 53%;
-			--red-700: 345deg, 16%, 52%;
-			--red-800: 344deg, 20%, 37%;
-			--red-900: 345deg, 24%, 30%;
-
-			--yellow-200: 24deg, 71%, 96%;
-			--yellow-300: 41deg, 94%, 93%;
-			--yellow-500: 41deg, 90%, 32%;
-			--yellow-700: 41deg, 16%, 46%;
-			--yellow-800: 40deg, 15%, 31%;
-			--yellow-900: 41deg, 24%, 24%;
 		}
 	}
 
@@ -148,7 +54,7 @@
 	}
 
 	/* Scroll thumb styles */
-	.scrollbar::-webkit-scrollbar {
+	/* .scrollbar::-webkit-scrollbar {
 		@apply w-0;
 	}
 	.scrollbar::-webkit-scrollbar-thumb {
@@ -159,7 +65,7 @@
 	}
 	.scrollbar::-webkit-scrollbar-thumb:hover {
 		@apply bg-blue-500;
-	}
+	} */
 
 	/* Scroll track styles (Background) */
 	.scrollbar::-webkit-scrollbar-track {
@@ -184,7 +90,7 @@
 	li,
 	button,
 	span {
-		@apply font-ui text-gray-700;
+		@apply font-body text-gray-700;
 	}
 
 	h1,
