@@ -54,7 +54,7 @@
 	}
 
 	/* Scroll thumb styles */
-	/* .scrollbar::-webkit-scrollbar {
+	.scrollbar::-webkit-scrollbar {
 		@apply w-0;
 	}
 	.scrollbar::-webkit-scrollbar-thumb {
@@ -65,7 +65,7 @@
 	}
 	.scrollbar::-webkit-scrollbar-thumb:hover {
 		@apply bg-blue-500;
-	} */
+	}
 
 	/* Scroll track styles (Background) */
 	.scrollbar::-webkit-scrollbar-track {
