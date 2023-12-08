@@ -10,7 +10,7 @@ export default function Home() {
 			<HeaderMini></HeaderMini>
 			<div className='container'>
 				<main className='section-block mb-32'>
-					<h1 className='heading-bigger pb-6'>Product Designer</h1>
+					<h1 className='heading-bigger pb-6'>Hola, soy David</h1>
 					<p className='p-large'>
 						<span className='b-large'>Tengo 4 años</span> trabajando
 						como{' '}
